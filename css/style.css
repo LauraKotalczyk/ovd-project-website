@@ -35,3 +35,78 @@ header>ul li {
     list-style: none;
     
 }
+.page-main {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+}
+.bienvenue{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.bienvenue>.texte{
+    width: 500px;
+    margin-left: 20px;
+}
+
+input:not(input[type="submit"]),textarea{
+    
+    border-bottom: 2px solid ;
+    resize: none;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.form-top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-left>div *{
+    display: block;
+}
+.form-right *{
+    display: block;
+}
+.form-contact input[type="submit"]{
+    background-color: blue;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 80px;
+    cursor: pointer;
+
+}
+
+footer{
+    height: 80px;
+    position: relative;
+    background-color: blue;
+}
+
+footer h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: beige;
+}

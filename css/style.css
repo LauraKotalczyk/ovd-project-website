@@ -110,3 +110,11 @@ footer h2{
     transform: translate(-50%,-50%);
     color: beige;
 }
+
+/*
+    STYLE FOR FORM.HTML ----------------------------------------------
+*/
+
+.justified {
+    text-align: justify, center;
+}

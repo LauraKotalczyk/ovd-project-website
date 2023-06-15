@@ -118,8 +118,15 @@ footer h2{
 */
 
 .justified {
-    text-align: justify, center;
-    
+    text-align: left;
+    margin-left: 0.5em;
+    font-weight: 500;
+}
+
+.preQ {
+    border: 1px solid black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 div {
@@ -186,7 +193,19 @@ input[type=color] {
 
 }
 
+
+/*
+    STYLE FOR POST QUESTIONNAIRE ----------------------------------------------
+*/
+.postQQ {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    border: 1px solid black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 .postQ {
-    font-size: 20px;
     margin-left: 0.5em;
 }

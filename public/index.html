@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this link if we use CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- this link if we use bulma
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+    
+    <script src="js/app.js"></script>
+    <title>Test colours</title>
+</head>
+<body>
+    <header>
+        <a href="/"> <img src="img/log.png"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+    <div class="page-main">
+    <div class="bienvenue" id="home">
+            <div>
+                <h1 Dear participant</h1>
+                    <p class = "justified">
+                        Dear participant, <br> 
+                        the information gathered from the following experiment will be used for analytical purposes only.<br>
+                        Thank you for taking the time to participate in our experiment.<br>
+                        <br> <br>
+                        The experiment will take you less than 5 minutes. 
+                        </p>
+                <a class="button" href="form.html">Start the experiment</a>
+            </div>
+           
+    </div>
+</div>
+    <footer>
+        <h2>Website</h2>
+    </footer>
+
+
+
+
+    <!--FIREBASE SUPPORT -->
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+      
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      
+        // Your web app's Firebase configuration
+      
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      
+        const firebaseConfig = {
+      
+          apiKey: "AIzaSyCu_FcOyB4IYd9B8vAgTLS7icnGhxiDO58",
+      
+          authDomain: "ovd-research-project.firebaseapp.com",
+      
+          projectId: "ovd-research-project",
+      
+          storageBucket: "ovd-research-project.appspot.com",
+      
+          messagingSenderId: "94059394640",
+      
+          appId: "1:94059394640:web:296cd6123075df78be0355",
+      
+          measurementId: "G-2Z0T40E691"
+      
+        };
+      
+      
+        // Initialize Firebase
+      
+        const app = initializeApp(firebaseConfig);
+      
+        const analytics = getAnalytics(app);
+      
+      </script>
+</body>
+</html>

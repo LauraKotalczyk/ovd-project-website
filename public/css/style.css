@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: blue;
+    height: 80;
+    position: relative;
+    top: 0;
+}
+header>*{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px 0 30px;
+}
+
+header img{
+    width: 50;
+}
+
+header>ul{
+    right: 0;
+    text-decoration: none;
+}
+
+header,header a {
+    color:yellow;
+}
+
+header>ul li {
+    margin: 10px;
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+    
+}
+.page-main {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+}
+.bienvenue{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.bienvenue>.texte{
+    width: 500px;
+    margin-left: 20px;
+}
+
+input:not(input[type="submit"]),textarea{
+    
+    border-bottom: 2px solid ;
+    resize: none;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    margin-right: 0px;
+    
+}
+.form-top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-left>div *{
+    display: block;
+}
+.form-right *{
+    display: block;
+}
+.form-contact input[type="submit"]{
+    background-color: blue;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 80px;
+    cursor: pointer;
+
+}
+
+footer{
+    height: 80px;
+    position: relative;
+    background-color: blue;
+}
+
+footer h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: beige;
+}
+
+/*
+    STYLE FOR FORM.HTML ----------------------------------------------
+*/
+
+.justified {
+    text-align: justify, center;
+    
+}
+
+div {
+    color: black;
+    font-weight: normal;
+}
+
+input[type=radio] {
+    transform: scale(1);
+    margin-right: -140;
+    margin-left: -50
+}
+
+.q2 {
+    margin-top: 0.5em;
+    margin-left : 28;
+}
+
+.q3 {
+    margin-top: 0.5em;
+    margin-left : 28;
+}
+
+.q6 {
+    margin-top: 0.5em;
+    margin-left : -65;
+    margin-right: -250;
+}
+
+.q7 {
+    margin-top: 0.5em;
+    margin-left : -65;
+    
+}
+
+.q8 {
+    margin-top: 0.5em;
+    margin-right: -250;
+    margin-left : 28;
+    
+}
+
+
+input[type=color] {
+    width: 10;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    height: 40;
+    
+ }

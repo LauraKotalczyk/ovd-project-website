@@ -179,9 +179,14 @@ input[type=color] {
 
 #preq_submitButton {
     margin-right: 200px;
-    margin-left: 600px;;
+    margin-left: 600px;
     width: 75px;
     height: 40px;
     font-size: 15px;
 
+}
+
+.postQ {
+    font-size: 20px;
+    margin-left: 0.5em;
 }

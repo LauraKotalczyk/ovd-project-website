@@ -143,6 +143,11 @@ input[type=radio] {
     margin-left : 28;
 }
 
+.q5 {
+    margin-top: 0.5em;
+}
+
+
 .q6 {
     margin-top: 0.5em;
     margin-left : -65;
@@ -171,3 +176,12 @@ input[type=color] {
     height: 40;
     
  }
+
+#preq_submitButton {
+    margin-right: 200px;
+    margin-left: 600px;;
+    width: 75px;
+    height: 40px;
+    font-size: 15px;
+
+}

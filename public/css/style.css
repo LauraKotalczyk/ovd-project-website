@@ -118,8 +118,15 @@ footer h2{
 */
 
 .justified {
-    text-align: justify, center;
-    
+    text-align: left;
+    margin-left: 0.5em;
+    font-weight: 500;
+}
+
+.preQ {
+    border: 1px solid black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 div {
@@ -142,6 +149,11 @@ input[type=radio] {
     margin-top: 0.5em;
     margin-left : 28;
 }
+
+.q5 {
+    margin-top: 0.5em;
+}
+
 
 .q6 {
     margin-top: 0.5em;
@@ -171,3 +183,40 @@ input[type=color] {
     height: 40;
     
  }
+
+#preq_submitButton {
+    margin-right: 200px;
+    margin-left: 600px;
+    width: 75px;
+    height: 40px;
+    font-size: 15px;
+
+}
+
+
+/*
+    STYLE FOR POST QUESTIONNAIRE ----------------------------------------------
+*/
+.postQQ {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    border: 1px solid black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.postQ {
+    margin-left: 0.5em;
+}
+
+/*
+    STYLE FOR THANK YOU PAGE ----------------------------------------------
+*/
+
+.thankY {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 45px;
+    margin-top: 250px;
+}

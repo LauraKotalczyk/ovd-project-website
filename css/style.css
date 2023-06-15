@@ -210,3 +210,13 @@ input[type=color] {
     margin-left: 0.5em;
 }
 
+/*
+    STYLE FOR THANK YOU PAGE ----------------------------------------------
+*/
+
+.thankY {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 45px;
+    margin-top: 250px;
+}

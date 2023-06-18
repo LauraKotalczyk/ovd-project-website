@@ -553,8 +553,8 @@
     
     
         /* Listen button */
-        var but = document.querySelector('section');
-        but.addEventListener('click', insertData());
+        var submitButton = document.querySelector('section');
+        submitButton.addEventListener('click', insertData());
         // INSERT DATA FUNCTION
         
 
@@ -563,7 +563,6 @@
         //document.getElementById("preQuestionnaire").addEventListener('submit', insertData());
 
         function insertData() {
-            /*e.preventDefault();*/
             var birthYear = document.querySelector('#birthyear');
             var country = document.querySelector('#country');
             set(ref(db, 'preQuestionnaireForUser/' + Math.random().toString(36).slice(2,7)), {

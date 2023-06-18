@@ -184,16 +184,26 @@ input[type=color] {
     
  }
 
-#preq_submitButton {
-    margin-right: 200px;
-    margin-left: 600px;
-    width: 75px;
-    height: 40px;
-    font-size: 15px;
 
+
+
+#preq_submitButton{
+    margin-left:20px;
+    width:80px;
+    height: 40px;
+    display:inline-block;
+    text-align:center;
+    font-size: 15px;
 }
 
-
+#preq_saveButton{
+    margin-left:20px;
+    width:80px;
+    height: 40px;
+    text-align:center;
+    display:inline-block;
+    font-size: 15px;
+}
 /*
     STYLE FOR POST QUESTIONNAIRE ----------------------------------------------
 */

@@ -548,12 +548,19 @@
         const db = getDatabase(app);
     
         // REFERENCES 
-        // var id = document.getElementById("id");
+        // TODO: unique USERID
+
+        var gender = document.querySelector('input[name="gender"]:checked');
         var birthYear = document.querySelector('#birthyear');
         var country = document.querySelector('#country');
-    
-        /* Listen button */
+        var colorblind = document.querySelector('input[name="colorblind"]:checked');
+        var howLongUsesWeb = document.querySelector('input[name="howLongUsesWeb"]:checked');
+        var howOftenUsesWeb = document.querySelector('input[name="howOftenUsesWeb"]:checked');
+        var howOftenBrowseShops = document.querySelector('input[name="howOftenBrowseShops"]:checked');
+        var onlinePurchasesLastYear = document.querySelector('#lastYearOnlinePurchases');
 
+        
+        /* Listen button */
         document.getElementById('test').addEventListener("click", function(){insertData()});
 
         
@@ -571,7 +578,13 @@
             console.log("step1");
             set(ref(db, 'preQuestionnaireForUser/' + Math.random().toString(36).slice(2,7)), {
                 birthYear : birthYear.value,
-                country : country.value
+                country : country.value,
+                gender : gender.value,
+                colorblind : colorblind.value,
+                howLongUsesWeb : howLongUsesWeb.value,
+                howOftenUsesWeb : howOftenUsesWeb.value,
+                howOftenBrowseShops : howOftenBrowseShops,
+                onlinePurchasesLastYear : onlinePurchasesLastYear
             }) .then(() => {
                 alert('Data stored successfully.');
                 document.getElementById('preQuestionnaire').reset();

@@ -24,7 +24,7 @@
         </div>
     </center>
     <br>
-   <form method="POST" action="experiment.html" id="preQuestionnaire">
+   <form method="POST" action="experiment.html" id="preQuestionnaire" >
         <fieldset>
             <legend> 1.) Please select your gender. </legend>
                 <div class="q1">
@@ -488,9 +488,12 @@
 
                 <br> 
 
-                <section>
+                <section> 
+                <button id="test" type="button" >Save</button>
+                </section>
+                
                 <button id="preq_submitButton" type="submit">Continue</button>
-                </section>   
+          
         </fieldset>
 
     </form>
@@ -542,39 +545,41 @@
     
         import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
     
-        const db = getDatabase();
+        const db = getDatabase(app);
     
         // REFERENCES 
         // var id = document.getElementById("id");
         var birthYear = document.querySelector('#birthyear');
         var country = document.querySelector('#country');
     
-    
-    
-    
         /* Listen button */
-        var but = document.querySelector('section');
-        but.addEventListener('click', insertData());
-        // INSERT DATA FUNCTION
-        
 
+        document.getElementById('test').addEventListener("click", function(){insertData()});
+
+        
+        //function () { window.alert('Clic sur le bouton')}
+        // INSERT DATA FUNCTION
+       
         // Assign Events to Buttons
         //submitButton.addEventListener('click', insertData());
         //document.getElementById("preQuestionnaire").addEventListener('submit', insertData());
 
-        function insertData() {
-            /*e.preventDefault();*/
+       function insertData() {
+            //e.preventDefault();
             var birthYear = document.querySelector('#birthyear');
             var country = document.querySelector('#country');
+            console.log("step1");
             set(ref(db, 'preQuestionnaireForUser/' + Math.random().toString(36).slice(2,7)), {
                 birthYear : birthYear.value,
                 country : country.value
-            }).then(() => {
+            }) .then(() => {
                 alert('Data stored successfully.');
                 document.getElementById('preQuestionnaire').reset();
             }).catch((error) => {
                 alert(error);
             });
+            console.log("step2");
+           
         }
     
         

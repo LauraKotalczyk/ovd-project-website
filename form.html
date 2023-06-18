@@ -406,8 +406,28 @@
 
                 <legend> 4.) Please select your favorite color. </legend>
                 <div class="q4">
-                    <!-- figure out!-->
+                    <input type="radio" id="red" name="color" value="red" >
+                    <label for="male">Red 🟥</label>
+
+                    <input type="radio" id="blue" name="color" value="blue" >
+                    <label for="female">Blue 🟦</label>
+            
+                    <input type="radio" id="yellow" name="color" value="yellow" >
+                    <label for="other">Yellow 🟨</label>
                     
+                    <input type="radio" id="orange" name="color" value="orange" >
+                    <label for="other">Orange 🟧</label>
+                    
+                    <input type="radio" id="green" name="color" value="green" >
+                    <label for="other">Green 🟩</label>
+                    
+
+                    <input type="radio" id="purple" name="color" value="purple" >
+                    <label for="other">Purple 🟪</label>
+                    
+
+                    <input type="radio" id="other" name="color" value="other" >
+                    <label for="other">Other</label>
                     
                 </div>
 
@@ -488,12 +508,11 @@
 
                 <br> 
 
-                <section> 
-                <button id="test" type="button" >Save</button>
-                </section>
+                
+                <button id="preq_saveButton" type="button" >Save</button>
                 
                 <button id="preq_submitButton" type="submit">Continue</button>
-          
+                
         </fieldset>
 
     </form>
@@ -554,7 +573,7 @@
     
         /* Listen button */
 
-        document.getElementById('test').addEventListener("click", function(){insertData()});
+        document.getElementById("preq_saveButton ").addEventListener("click", function(){insertData()});
 
         
         //function () { window.alert('Clic sur le bouton')}

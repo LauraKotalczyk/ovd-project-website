@@ -488,8 +488,9 @@
 
                 <br> 
                 
+                <section>
                 <button id="preq_submitButton" type="submit">Continue</button>
-                    
+                </section>   
         </fieldset>
 
     </form>
@@ -545,13 +546,14 @@
     
         // REFERENCES 
         // var id = document.getElementById("id");
-        var birthYear = document.querySelector('#birthyear');
-        var country = document.querySelector('#country');
+       
     
     
     
     
-        document.getElementById('preQuestionnaire').addEventListener('submit', insertData());
+        /* Listen button */
+        var but = document.querySelector('section');
+        but.addEventListener('click', insertData());
         // INSERT DATA FUNCTION
         
 
@@ -559,14 +561,16 @@
         //submitButton.addEventListener('click', insertData());
         //document.getElementById("preQuestionnaire").addEventListener('submit', insertData());
 
-        function insertData(e) {
-            e.preventDefault();
+        function insertData() {
+            /*e.preventDefault();*/
+            var birthYear = document.querySelector('#birthyear');
+            var country = document.querySelector('#country');
             set(ref(db, 'preQuestionnaireForUser/' + Math.random().toString(36).slice(2,7)), {
                 birthYear : birthYear.value,
                 country : country.value
             }).then(() => {
                 alert('Data stored successfully.');
-                document.getElementbyId('preQuestionnaire').reset();
+                document.getElementById('preQuestionnaire').reset();
             }).catch((error) => {
                 alert(error);
             });

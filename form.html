@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js"></script>
+
     <title>Pre Questionnaire</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
         </div>
     </center>
     <br>
-   <form>
+   <form method="POST" action="experiment.html" id="preQuestionnaire">
         <fieldset>
             <legend> 1.) Please select your gender. </legend>
                 <div class="q1">
@@ -488,46 +488,91 @@
 
                 <br> 
                 
-                <a href="experiment.html">
-                    <input id="preq_submitButton" type="submit" value="Continue">
-                </a>
+                <button id="preq_submitButton" type="submit">Continue</button>
                     
         </fieldset>
 
     </form>
-    <!-- Write your comments here
-    <div class="form" id="form"> 
-        <h2 class="title-category">Questionnaire</h2>
-        <div class="form-contact-container">
-            <form action="form.php" method="post" class="form-contact">
-                <div class="form-top">
-                    <div class="form-left">
-                        <div><label for="name">Name</label>
-                            <input type="text" name="name">
-                        </div>
-                        <div><label for="email">Email</label>
-                            <input type="text" name="email">
-                        </div>
-                    </div>
-                    <div class="form-right">
-                        <label for="message">Message</label>
-                        <textarea name="message" cols="30" rows="5"></textarea>
-                    </div>
-                </div>
-                <div class="form-bottom">
-                    <input type="submit" name="send" value="Submit"> 
-                </div>
-            </form>
+    <script type="module">
+
+    // Import the functions you need from the SDKs you need
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
 
+        // Your web app's Firebase configuration
 
-        </div>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        const firebaseConfig = {
+
+        apiKey: "AIzaSyCu_FcOyB4IYd9B8vAgTLS7icnGhxiDO58",
+
+        authDomain: "ovd-research-project.firebaseapp.com",
+
+        databaseURL: "https://ovd-research-project-default-rtdb.europe-west1.firebasedatabase.app",
+
+        projectId: "ovd-research-project",
+
+        storageBucket: "ovd-research-project.appspot.com",
+
+        messagingSenderId: "94059394640",
+
+        appId: "1:94059394640:web:296cd6123075df78be0355",
+
+        measurementId: "G-2Z0T40E691"
+
+        };
+
+
+        // Initialize Firebase
+
+        const app = initializeApp(firebaseConfig);
+
+        const analytics = getAnalytics(app);
+
+    ////////////////////////////////////////////////////////////////////////////
+    
+        import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
+    
+        const db = getDatabase();
+    
+        // REFERENCES 
+        // var id = document.getElementById("id");
+        var birthYear = document.querySelector('#birthyear');
+        var country = document.querySelector('#country');
+    
+    
+    
+    
+        document.getElementById('preQuestionnaire').addEventListener('submit', insertData());
+        // INSERT DATA FUNCTION
         
 
+        // Assign Events to Buttons
+        //submitButton.addEventListener('click', insertData());
+        //document.getElementById("preQuestionnaire").addEventListener('submit', insertData());
 
-
-    </div>
-</div>
--->
+        function insertData(e) {
+            e.preventDefault();
+            set(ref(db, 'preQuestionnaireForUser/' + Math.random().toString(36).slice(2,7)), {
+                birthYear : birthYear.value,
+                country : country.value
+            }).then(() => {
+                alert('Data stored successfully.');
+                document.getElementbyId('preQuestionnaire').reset();
+            }).catch((error) => {
+                alert(error);
+            });
+        }
+    
+        
+      </script>
 </body>
 </html>

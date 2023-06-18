@@ -18,7 +18,7 @@
     <div class="page-main">
     <div class="bienvenue" id="home">
             <div>
-                <h1 Dear participant</h1>
+                <h1>Dear participant</h1>
                     <p class = "justified">
                         Dear participant, <br> 
                         the information gathered from the following experiment will be used for analytical purposes only.<br>
@@ -37,6 +37,8 @@
 
 
 
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
 
     <!--FIREBASE SUPPORT -->
     <script type="module">
@@ -80,7 +82,8 @@
         const app = initializeApp(firebaseConfig);
       
         const analytics = getAnalytics(app);
-      
+    
+        
       </script>
       
 </body>

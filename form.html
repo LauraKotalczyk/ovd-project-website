@@ -28,14 +28,11 @@
         <fieldset>
             <legend> 1.) Please select your gender. </legend>
                 <div class="q1">
-                    <input type="radio" id="male" name="gender" value="male" checked>
-                    <label for="male">Male</label>
-
-                    <input type="radio" id="female" name="gender" value="female" checked>
-                    <label for="female">Female</label>
-            
-                    <input type="radio" id="other" name="gender" value="other" checked>
-                    <label for="other">Other</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
 
                 <legend> 2.) Please select your year of birth. </legend>
@@ -406,28 +403,15 @@
 
                 <legend> 4.) Please select your favorite color. </legend>
                 <div class="q4">
-                    <input type="radio" id="red" name="color" value="red" >
-                    <label for="male">Red 🟥</label>
-
-                    <input type="radio" id="blue" name="color" value="blue" >
-                    <label for="female">Blue 🟦</label>
-            
-                    <input type="radio" id="yellow" name="color" value="yellow" >
-                    <label for="other">Yellow 🟨</label>
-                    
-                    <input type="radio" id="orange" name="color" value="orange" >
-                    <label for="other">Orange 🟧</label>
-                    
-                    <input type="radio" id="green" name="color" value="green" >
-                    <label for="other">Green 🟩</label>
-                    
-
-                    <input type="radio" id="purple" name="color" value="purple" >
-                    <label for="other">Purple 🟪</label>
-                    
-
-                    <input type="radio" id="other" name="color" value="other" >
-                    <label for="other">Other</label>
+                    <select id="favcolor" name="favcolor">
+                        <option value="red">Red 🟥</option>
+                        <option value="blue">Blue 🟦</option>
+                        <option value="yellow">Yellow 🟨</option>
+                        <option value="orange">Orange 🟧</option>
+                        <option value="green">Green 🟩</option>
+                        <option value="purple">Purple 🟪</option>
+                        <option value="other">Other</option>
+                    </select>
                     
                 </div>
 
@@ -435,75 +419,26 @@
 
                 <legend> 5.) Are you colorblind? </legend>
                 <div class="q5">
-                    <input type="radio" id="yes" name="colorblind" value="yes" checked>
-                    <label for="yes">Yes</label>
-
-                    <input type="radio" id="no" name="colorblind" value="No" checked>
-                    <label for="no">No</label>
+                    <select id="colorblind" name="colorblind">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </div>
 
+                
                 <br>
-                <legend> 6.) For how long do you use the web? Please select the most suitable answer for you. </legend>
-                <div class="q6">
-                    <input type="radio" id="l_3months" name="howLongUsesWeb" value="l_3months" checked>
-                    <label for="l_3months">for less than 3 months </label>
-
-                    <input type="radio" id="3m_to_1y" name="howLongUsesWeb" value="3m_to_1y" checked>
-                    <label for="3m_to_1y">for 3 months - 1 year</label>
-
-                    <input type="radio" id="1y_to_2y" name="howLongUsesWeb" value="1y_to_2y" checked>
-                    <label for="1y_to_2y"> for 1 - 2 years</label>
-
-                    <input type="radio" id="m_than_2y" name="howLongUsesWeb" value="m_than_2y" checked>
-                    <label for="m_than_2y"> for more than 2 years</label>
-
-                    <input type="radio" id="not_at_all" name="howLongUsesWeb" value="not_at_all" checked>
-                    <label for="not_at_all"> not at all</label>
-                </div>
-
-                <br>
-                <legend> 7.) How often do you use the web? Please select the most suitable answer for you. </legend>
-                <div class="q7">
-                    <input type="radio" id="1x_a_day" name="howOftenUsesWeb" value="1x_a_day" checked>
-                    <label for="1x_a_day">1x / day </label>
-
-                    <input type="radio" id="1x_a_week" name="howOftenUsesWeb" value="1x_a_week" checked>
-                    <label for="1x_a_week">1x / week</label>
-
-                    <input type="radio" id="1x_a_month" name="howOftenUsesWeb" value="1x_a_month" checked>
-                    <label for="1x_a_month">1x / month</label>
-
-                    <input type="radio" id="m_1x_a_month" name="howOftenUsesWeb" value="m_1x_a_month" checked>
-                    <label for="m_1x_a_month"> more than 1x / month</label>
-
-                    <input type="radio" id="not_at_all" name="howOftenUsesWeb" value="not_at_all" checked>
-                    <label for="not_at_all"> not at all</label>
-                </div>
-
-                <br>
-                <legend> 7.) How often do you browse web shops? Please select the most suitable answer for you. </legend>
-                <div class="q7">
-                    <input type="radio" id="1x_a_day" name="howOftenBrowseShops" value="1x_a_day" checked>
-                    <label for="1x_a_day">1x / day </label>
-
-                    <input type="radio" id="1x_a_week" name="howOftenBrowseShops" value="1x_a_week" checked>
-                    <label for="1x_a_week">1x / week</label>
-
-                    <input type="radio" id="1x_a_month" name="howOftenBrowseShops" value="1x_a_month" checked>
-                    <label for="1x_a_month">1x / month</label>
-
-                    <input type="radio" id="m_1x_a_month" name="howOftenBrowseShops" value="m_1x_a_month" checked>
-                    <label for="m_1x_a_month"> more than 1x / month</label>
-
-                    <input type="radio" id="not_at_all" name="howOftenBrowseShops" value="not_at_all" checked>
-                    <label for="not_at_all"> not at all</label>
-                </div>
-
-                <br>
-                <legend> 8.) Please enter the number of your online purchases in the last year. </legend>
+                <legend> 6.) Please select your average number of online purchases per month. </legend>
                 <div class="q8">
-                    <label for="lastYearOnlinePurchases">Number of online purchases in the last year:  </label>
-                    <input type="number" id="lastYearOnlinePurchases" name="lastYearOnlinePurchases"  min="0">
+                    <select id="numberOfPurchasesAvg" name="numberOfPurchasesAvg">
+                        <option value="0_to_5">0 - 5</option>
+                        <option value="5_to_10">5 - 10</option>
+                        <option value="10_to_15">10 - 15</option>
+                        <option value="15_to_20">15 - 20</option>
+                        <option value="moreThan20">> 20</option>
+
+
+
+                    </select>
                 </div>
 
                 <br> 

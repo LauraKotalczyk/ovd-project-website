@@ -140,6 +140,12 @@ input[type=radio] {
     margin-left: -50
 }
 
+.q1 {
+    margin-top: 0.5em;
+    margin-left : 28;
+    margin-bottom: 0.5em;
+}
+
 .q2 {
     margin-top: 0.5em;
     margin-left : 28;
@@ -150,8 +156,14 @@ input[type=radio] {
     margin-left : 28;
 }
 
+.q4 {
+    margin-top: 0.5em;
+    margin-left : 28;
+}
+
 .q5 {
     margin-top: 0.5em;
+    margin-left : 28;
 }
 
 

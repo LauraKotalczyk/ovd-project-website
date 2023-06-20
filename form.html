@@ -9,7 +9,6 @@
 </head>
 <body>
     
-    
     <center><h1>Pre-Questionnaire</h1></center>
     <center>
         <div class="preQ">
@@ -24,7 +23,7 @@
         </div>
     </center>
     <br>
-   <form method="POST" action="experiment.html" id="preQuestionnaire" >
+   <form action="explanation.html" id="preQuestionnaire" >
         <fieldset>
             <legend> 1.) Please select your gender. </legend>
                 <div class="q1">
@@ -513,7 +512,7 @@
         var howOftenBrowseShops = document.querySelector('input[name="howOftenBrowseShops"]:checked');
         var onlinePurchasesLastYear = document.querySelector('#lastYearOnlinePurchases');
 
-        document.getElementById("preq_saveButton ").addEventListener("click", function(){insertData()});
+        document.getElementById("preq_saveButton").addEventListener("click", function(){insertData()});
 
         
         //function () { window.alert('Clic sur le bouton')}

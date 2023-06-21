@@ -10,8 +10,11 @@
 <body>
     
     <center><h1>Pre-Questionnaire</h1></center>
-    <center>
-        <div class="preQ">
+    <div class="preQ">
+    <table>
+        <tr>
+        <td>
+        
             <p class = "justified">
             Dear participant, <br> 
             the following questionnaire will be used for analytical purposes only.<br>
@@ -20,12 +23,28 @@
             <br> <br>
             The questionnaire will take you less than a minute. 
             </p>
-        </div>
-    </center>
+        
+    </td>
+
+    <td>
+            <p class = "justified">
+            Estimado participante, <br> 
+            el siguiente cuestionario se utilizará únicamente con fines de análisis.<br>
+            Gracias por dedicar su tiempo a participar en nuestro experimento.<br>
+            Por favor, responda a las preguntas con sinceridad.<br>
+            <br> <br>
+            El cuestionario le llevará menos de un minuto. 
+            </p>
+
+    </td>
+    </tr>
+        
+    </table>
+</div>
     <br>
    <form action="explanation.html" id="preQuestionnaire" >
         <fieldset>
-            <legend> 1.) Please select your gender. </legend>
+            <legend> 1.) Please select your gender / Seleccione su sexo </legend>
                 <div class="q1">
                     <select id="gender" name="gender">
                         <option value="male">Male</option>
@@ -34,7 +53,7 @@
                     </select>
                 </div>
 
-                <legend> 2.) Please select your year of birth. </legend>
+                <legend> 2.) Please select your year of birth / Seleccione su año de nacimiento </legend>
                 <div class="q2">
                     <select id="birthyear" name="birthyear">
                         <option value="2023">2023</option>
@@ -142,7 +161,7 @@
 
                 <br>
 
-                <legend> 3.) Please select your country. </legend>
+                <legend> 3.) Please select your country / Seleccione su país</legend>
                 <div class="q3"> 
                     <!-- using ISO-3166-1 Alpha-2 Codes @https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page-->
                     <select id="country" name="country">
@@ -400,7 +419,7 @@
 
                 <br>
 
-                <legend> 4.) Please select your favorite color. </legend>
+                <legend> 4.) Please select your favorite color / Seleccione su color favorito </legend>
                 <div class="q4">
                     <select id="favcolor" name="favcolor">
                         <option value="red">Red 🟥</option>
@@ -416,7 +435,7 @@
 
                 <br>
 
-                <legend> 5.) Are you colorblind? </legend>
+                <legend> 5.) Are you colorblind ? / ¿Es usted daltónico? </legend>
                 <div class="q5">
                     <select id="colorblind" name="colorblind">
                         <option value="yes">Yes</option>
@@ -426,7 +445,7 @@
 
                 
                 <br>
-                <legend> 6.) Please select your average number of online purchases per month. </legend>
+                <legend> 6.) Please select your average number of online purchases per month / Seleccione su número medio de compras en línea al mes </legend>
                 <div class="q8">
                     <select id="numberOfPurchasesAvg" name="numberOfPurchasesAvg">
                         <option value="0_to_5">0 - 5</option>

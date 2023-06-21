@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,18 +15,29 @@
 
 <div class="topnav">
   <a id="NotGood" href="#bad">TV</a>
-  <a id="Good" href="smartphone.html">Smartphone</a>
+  <a id="Good" href="#news">Smartphone</a>
   <a id="NotGood2" href="#bad">Computers</a>
   <a id="NotGood3" href="#bad">Headphones</a>
   <a id="NotGood4" href="#bad">Camera</a>
 </div>
+<p class="flotte">
+    <img src="img/smartphone.jpg" />
+</p>
+   <br><br><br>
+<p>
+    <img src="img/grey_bloc.jpg" height="200px"/>
+</p>
+<button id="BuyButton" type="button" onclick="window.location.href ='postQuestionnaire.html'" >Buy</button>
 
 <script>
 document.getElementById("NotGood").addEventListener("click", function(){ window.alert('wrong category')});
 document.getElementById("NotGood2").addEventListener("click", function(){ window.alert('wrong category')});
 document.getElementById("NotGood3").addEventListener("click", function(){ window.alert('wrong category' )});
 document.getElementById("NotGood4").addEventListener("click", function(){ window.alert('wrong category')});
+
 </script>
 
 </body>
 </html>
+
+

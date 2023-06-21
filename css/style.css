@@ -196,9 +196,6 @@ input[type=color] {
     
  }
 
-
-
-
 #preq_submitButton{
     margin-left:20px;
     width:80px;
@@ -215,6 +212,19 @@ input[type=color] {
     text-align:center;
     display:inline-block;
     font-size: 15px;
+}
+#BuyButton{
+    margin-left:20px;
+    width:80px;
+    height: 40px;
+    text-align:center;
+    display:inline-block;
+    font-size: 15px;
+    background-color: blue;
+    color: yellow;
+}
+table{
+    border-spacing: 10px;
 }
 /*
     STYLE FOR POST QUESTIONNAIRE ----------------------------------------------
@@ -263,4 +273,7 @@ input[type=color] {
     font-size: 20px;
     color: yellow;
 }
-  
+
+.flotte {
+    float:left;
+    }

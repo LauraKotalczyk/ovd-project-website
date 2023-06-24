@@ -191,6 +191,7 @@ input[type=color] {
     
  }
 
+
 #preq_submitButton{
     margin-left:20px;
     width:80px;
@@ -221,6 +222,8 @@ input[type=color] {
 table{
     border-spacing: 10px;
 }
+
+
 /*
     STYLE FOR POST QUESTIONNAIRE ----------------------------------------------
 */

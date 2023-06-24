@@ -35,6 +35,10 @@ header>ul li {
     list-style: none;
     
 }
+
+h1 {
+    margin-left: 0.2em;
+}
 .page-main {
     display: block;
     margin: auto;
@@ -97,6 +101,10 @@ label {
     margin-bottom: 80px;
     cursor: pointer;
 
+}
+
+#startButton {
+    margin-left: 0.5em;
 }
 
 

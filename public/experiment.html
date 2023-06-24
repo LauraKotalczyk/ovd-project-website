@@ -1,11 +1,33 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/experiment.css">
+    <title>Experiment</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    
+    <div class="exp">
+        <p id="exptext">Click on the smartphone category and then click on "buy".<br>
+        Clic en la categoría de smartphones y luego en "buy".<br>
+    </div>
+
+<div class="topnav">
+  <a id="NotGood" href="#bad">TV</a>
+  <a id="NotGood4" href="#bad">Camera</a>
+  <a id="NotGood2" href="#bad">Computers</a>
+  <a id="Good" href="smartphone.html">Smartphones</a>
+  <a id="NotGood3" href="#bad">Headphones</a>
+</div>
+
+<script>
+document.getElementById("NotGood").addEventListener("click", function(){ window.alert('wrong category')});
+document.getElementById("NotGood2").addEventListener("click", function(){ window.alert('wrong category')});
+document.getElementById("NotGood3").addEventListener("click", function(){ window.alert('wrong category' )});
+document.getElementById("NotGood4").addEventListener("click", function(){ window.alert('wrong category')});
+</script>
+
 </body>
 </html>

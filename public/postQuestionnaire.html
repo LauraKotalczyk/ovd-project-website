@@ -12,35 +12,79 @@
     <header>
     </header>
     <center><h1>Post-Questionnaire</h1></center>
-    <div class="postQQ">
-        <p class ="postQ">
-            Dear participant, <br> 
-            the information gathered from the following questionnaire will be used for analytical purposes only.<br>
-            <br> <br>
-            The questionnaire will take you less than a minute. 
-        </p>
-    </div>
-    <br>
+<div class="postQQ">  
+    <table>
+        <tr>
+        <td>
+            
+                <p class ="postQ">
+                    The experiment is finished. Please answer the following questions with respect to the task and website you have seen.<br> <br>
+                    
+                    Choose the most number the most suitable for your experience with the website. <br> <br>
+                    1 : Strongly disagree <br>
+                    7 : Strongly agree <br>
+                </p>
+                
+                <!-- reference : Towards Evaluating e-Commerce Sites Purchase Intention using
+                     Affective Computing, a Preliminary Study 2022-->
+            
+
+            <td>
+                <p class ="postQ">
+                    El experimento ha terminado. Por favor, responda las siguientes preguntas con respecto a la tarea y el sitio web que ha visto. <br> <br>
+
+                    Elija el número más adecuado para su experiencia con el sitio web. <br> <br> <br>
+                1 : Totalmente en desacuerdo <br>
+                7 : Totalmente de acuerdo <br>
+                </p>
+
+            </td>
+    </tr>
+    </table>
+</div>
     <form>
         <fieldset>
-            <legend> 1.) To what extent did you find the task to be difficult?</legend>
+            <legend> 1.) It was easy to read the text on the website with the used font / background color combination. / Era fácil leer el texto en el sitio web con la combinación de fuente / color de fondo utilizada.</legend>
             <div class="post_q1">
-                <input type="radio" id="not_at_all" name="difficulty" value="not_at_all" checked>
-                <label for="not_at_all">Not at all</label>
-
-                <input type="radio" id="smallExtent" name="difficulty" value="smallExtent" checked>
-                <label for="smallExtent">To a small extent</label>
-        
-                <input type="radio" id="someExtent" name="difficulty" value="someExtent" checked>
-                <label for="someExtent">To some extent</label>
-
-                <input type="radio" id="moderateExtent" name="difficulty" value="moderateExtent" checked>
-                <label for="moderateExtent">To a moderate extent</label>
-        
-                <input type="radio" id="greatExtent" name="difficulty" value="greatExtent" checked>
-                <label for="greatExtent">To a great extent</label>
+                <select name="EasyRead" id="EasyRead">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
             </div>
-
+            <br>
+            <legend> 2.) The color scheme of this website was appealing. / El esquema de color de este sitio web era atractivo. </legend>
+            <div class="post_q2">
+                <select name="LikeColor" id="LikeColor">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            <br>
+            <legend> 3.) The use of the applied colors enhanced navigation. / El uso de los colores aplicados mejoró la navegación. </legend>
+            <div class="post_q3">
+                <select name="easyNav" id="easyNav">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            <br>
+            <button id="continue" onclick="window.location.href ='thanks.html'">Continue</button>
+            <a class="button" href="thanks.html">Continue</a>
         </fieldset>
     </form>
     

@@ -10,10 +10,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
     
     <script src="js/app.js"></script>
+    <add name="Access-Control-Allow-Origin" value="*" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+   <!-- Tracking script -->
+
+    <script src="js/html2canvas.js"></script>        
+	<script src="js/scriptTest.js"></script>  
+
+    <script>window.onload=function()
+        {	           
+            startExperiment();
+            initTracking(100);
+            registerUserData();	
+        }
+    </script>
+    
     <title>Experiment</title>
 
 <body>
     
+
     <div class="page-main">
     <div class="bienvenue" id="home">
             <div>
@@ -38,7 +57,9 @@
                     <br> <br>
                     El experimento te llevará menos de 5 minutos.
                     </p>
-                <a class="button" id="startButton" href="form.html">Start the experiment</a>
+                <button id="startButton" onclick="finishTracking();finishExperiment();">Start the experiment</button>
+                    
+                
             </div>
            
     </div>

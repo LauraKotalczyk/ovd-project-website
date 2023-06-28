@@ -9,12 +9,15 @@
 </head>
 <body>
     
+    <script src="js/html2canvas.js"></script>        
+	<script src="js/scriptTest.js"></script>  
+
+
     <center><h1>Pre-Questionnaire</h1></center>
     <div class="preQ">
     <table>
         <tr>
         <td>
-        
             <p class = "justified">
             Dear participant, <br> 
             the following questionnaire will be used for analytical purposes only.<br>
@@ -41,7 +44,8 @@
     </table>
 </div>
     <br>
-   <form action="explanation.html" id="preQuestionnaire" >
+    <!--action="explanation.html"-->
+   <form   id="preQuestionnaire" >
         <fieldset>
             <legend> 1.) Please select your gender / Seleccione su sexo </legend>
                 <div class="q1">
@@ -55,7 +59,7 @@
                 <legend> 2.) Please select your year of birth / Seleccione su año de nacimiento </legend>
                 <div class="q2">
                     <select id="birthyear" name="birthyear">
-                        <option value="2023">2023</option>
+                        <option value="2023" onclick="registerBirth_Year(2023);">2023</option>
                         <option value="2022">2022</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
@@ -461,14 +465,15 @@
                 <br> 
 
                 
-                <button id="preq_saveButton" type="button" >Save</button>
+                <button id="preq_saveButton" type="button">Save</button>
                 
-                <button id="preq_submitButton" type="submit">Continue</button>
+                <button id="preq_submitButton" type="submit" onclick='finishTracking("explanation.html");'>Continue</button>
                 
         </fieldset>
 
     </form>
-    <script type="module">
+
+   <!-- <script type="module">
 
     // Import the functions you need from the SDKs you need
 
@@ -565,6 +570,6 @@
         }
     
         
-      </script>
+      </script>-->
 </body>
 </html>

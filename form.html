@@ -69,6 +69,7 @@
             <legend> 1.) Please select your gender / Seleccione su sexo </legend>
                 <div class="q1">
                     <select id="gender" name="gender">
+                        <option value="blank" selected>  </option>
                         <option value="male" onclick="registergender('male')">Male</option>
                         <option value="female" onclick="registergender('female')">Female</option>
                         <option value="other" onclick="registergender('other')">Other</option>
@@ -78,6 +79,7 @@
                 <legend> 2.) Please select your year of birth / Seleccione su año de nacimiento </legend>
                 <div class="q2">
                     <select id="birthyear" name="birthyear">
+                        <option value="blank" selected>  </option>
                         <option value="2023" onclick="registeryearOfBirth(2023);">2023</option>
                         <option value="2022" onclick="registeryearOfBirth(2022);">2022</option>
                         <option value="2021" onclick="registeryearOfBirth(2021);">2021</option>
@@ -187,6 +189,7 @@
                 <div class="q3"> 
                     <!-- using ISO-3166-1 Alpha-2 Codes @https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page-->
                     <select id="country" name="country">
+                        <option value="blank" selected>  </option>
                         <option value="AF" onclick="registercountry('Afghanistan');">Afghanistan</option>
                         <option value="AX" onclick="registercountry('Åland Islands');">Åland Islands</option>
                         <option value="AL" onclick="registercountry('Albania');">Albania</option>
@@ -440,6 +443,7 @@
                 <legend> 4.) Are you colorblind? / ¿Es usted daltónico? </legend>
                 <div class="q4">
                     <select id="colorblind" name="colorblind">
+                        <option value="blank" selected>  </option>
                         <option value="yes" onclick="registercolorblind('yes')">Yes</option>
                         <option value="no" onclick="registercolorblind('no')">No</option>
                     </select>
@@ -449,6 +453,7 @@
                 <legend> 5.) Please select your favorite color / Seleccione su color favorito </legend>
                 <div class="q5">
                     <select id="favcolor" name="favcolor">
+                        <option value="blank" selected>  </option>
                         <option value="red" onclick="registerfavoriteColor('red')">Red 🟥</option>
                         <option value="blue" onclick="registerfavoriteColor('blue')">Blue 🟦</option>
                         <option value="yellow" onclick="registerfavoriteColor('yellow')">Yellow 🟨</option>
@@ -464,6 +469,7 @@
                 <legend> 6.) Please select your average number of online purchases per month / <br> Seleccione su número medio de compras en línea al mes </legend>
                 <div class="q8">
                     <select id="numberOfPurchasesAvg" name="numberOfPurchasesAvg">
+                        <option value="blank" selected>  </option>
                         <option value="0_to_5" onclick="registeravgNumberOPurchases('0-5')">0 - 5</option>
                         <option value="5_to_10" onclick="registeravgNumberOPurchases('5-10')">5 - 10</option>
                         <option value="10_to_15" onclick="registeravgNumberOPurchases('10-15')">10 - 15</option>
@@ -479,6 +485,7 @@
                 <legend> 7.) Please select the device you are doing the experiment on / <br> Seleccione el dispositivo en el que está realizando el experimento </legend>
                 <div class="q8">
                     <select id="device" name="device">
+                        <option value="blank" selected>  </option>
                         <option value="smartphone" onclick="registerdevice('Smartphone')">Smartphone</option>
                         <option value="computer" onclick="registerdevice('Computer')">Computer</option>
                         <option value="tablet" onclick="registerdevice('Tablet')">Tablet</option>

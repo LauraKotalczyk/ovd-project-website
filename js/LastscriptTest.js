@@ -49,7 +49,7 @@
 		var elements = [];
 		var emittingData = false;
 		
-	var idExperiment = 18;
+	var idExperiment = 15;
 	var urlBase='http://156.35.82.106'
 		
 		var url = urlBase + '/TrackerServer/restws/track';
@@ -765,4 +765,4 @@
 			}
 		}
 	
-function registergender(value) {postStringDD(92, value);}function registeryearOfBirth(value) {postNumberDD(93, value);}function registercountry(value) {postStringDD(94, value);}function registercolorblind(value) {postStringDD(95, value);}function registerfavoriteColor(value) {postStringDD(96, value);}function registeravgNumberOPurchases(value) {postNumberDD(97, value);}function registerdevice(value) {postStringDD(98, value);}function registeruserID(value) {postStringDD(99, value);}function registereasyRead(value) {postNumberDD(100, value);}function registerappealingColor(value) {postNumberDD(101, value);}function registereasyNav(value) {postNumberDD(102, value);}
+function registerBirth_Year(value) {postNumberDD(30, value);}function registerCountry(value) {postStringDD(31, value);}function registerGender(value) {postStringDD(32, value);}function registerFavorite_Color(value) {postStringDD(33, value);}function registerColorblind(value) {postStringDD(34, value);}function registerId(value) {postStringDD(35, value);}function registerMean_purchase(value) {postStringDD(36, value);}function registerEasy_read(value) {postNumberDD(37, value);}function registerAppealing_website(value) {postNumberDD(38, value);}

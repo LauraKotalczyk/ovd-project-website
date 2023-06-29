@@ -91,14 +91,15 @@
             <br>
             <legend> 2.) The color scheme of this website was appealing. / El esquema de color de este sitio web era atractivo. </legend>
             <div class="post_q2">
-                <select name="LikeColor" id="LikeColor">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
+                <select name="appealing" id="appealing">
+                    <option value="blank" selected>  </option>
+                    <option value="1" onclick="registerappealingColor(1)">1</option>
+                    <option value="2" onclick="registerappealingColor(2)">2</option>
+                    <option value="3" onclick="registerappealingColor(3)">3</option>
+                    <option value="4" onclick="registerappealingColor(4)">4</option>
+                    <option value="5" onclick="registerappealingColor(5)">5</option>
+                    <option value="6" onclick="registerappealingColor(6)">6</option>
+                    <option value="7" onclick="registerappealingColor(7)">7</option>
                 </select>
             </div>
             <br>
@@ -116,7 +117,7 @@
                 </select>
             </div>
             <br>
-            <button id="continue" onclick='finishTracking("explanation.html");finishSubsceneTracking();'>Continue</button>
+            <button id="continue2" type="button" onclick='finishTracking("thanks.html");finishSubsceneTracking();finishExperiment();'>Continue</button>
 
         </fieldset>
     </form>

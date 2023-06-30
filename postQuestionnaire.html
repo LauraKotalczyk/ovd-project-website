@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="js/app.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this link if we use CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- this link if we use bulma
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+        
+        <script src="js/app.js"></script>
+        <add name="Access-Control-Allow-Origin" value="*" />
+    
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+       <!-- Tracking script -->
+    
+        <script src="js/html2canvas.js"></script>        
+        <script src="js/scriptTest.js"></script>  
     <title>Post Questionnaire</title>
+    
+    <script>window.onload=function()
+        {	           
+            initTracking(400);
+        }
+    </script>
 </head>
 
     <!-- Google tag (gtag.js) -->
@@ -58,44 +78,47 @@
             <legend> 1.) It was easy to read the text on the website with the used font / background color combination. / Era fácil leer el texto en el sitio web con la combinación de fuente / color de fondo utilizada.</legend>
             <div class="post_q1">
                 <select name="easyRead" id="easyRead">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
+                    <option value="blank" selected>  </option>
+                    <option value="1" onclick="registereasyRead(1)">1</option>
+                    <option value="2" onclick="registereasyRead(2)">2</option>
+                    <option value="3" onclick="registereasyRead(3)">3</option>
+                    <option value="4" onclick="registereasyRead(4)">4</option>
+                    <option value="5" onclick="registereasyRead(5)">5</option>
+                    <option value="6" onclick="registereasyRead(6)">6</option>
+                    <option value="7" onclick="registereasyRead(7)">7</option>
                 </select>
             </div>
             <br>
             <legend> 2.) The color scheme of this website was appealing. / El esquema de color de este sitio web era atractivo. </legend>
             <div class="post_q2">
-                <select name="likeColor" id="likeColor">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
+                <select name="appealing" id="appealing">
+                    <option value="blank" selected>  </option>
+                    <option value="1" onclick="registerappealingColor(1)">1</option>
+                    <option value="2" onclick="registerappealingColor(2)">2</option>
+                    <option value="3" onclick="registerappealingColor(3)">3</option>
+                    <option value="4" onclick="registerappealingColor(4)">4</option>
+                    <option value="5" onclick="registerappealingColor(5)">5</option>
+                    <option value="6" onclick="registerappealingColor(6)">6</option>
+                    <option value="7" onclick="registerappealingColor(7)">7</option>
                 </select>
             </div>
             <br>
             <legend> 3.) The use of the applied colors enhanced navigation. / El uso de los colores aplicados mejoró la navegación. </legend>
             <div class="post_q3">
                 <select name="easyNav" id="easyNav">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
+                    <option value="blank" selected>  </option>
+                    <option value="1" onclick="registereasyNav(1)">1</option>
+                    <option value="2" onclick="registereasyNav(2)">2</option>
+                    <option value="3" onclick="registereasyNav(3)">3</option>
+                    <option value="4" onclick="registereasyNav(4)">4</option>
+                    <option value="5" onclick="registereasyNav(5)">5</option>
+                    <option value="6" onclick="registereasyNav(6)">6</option>
+                    <option value="7" onclick="registereasyNav(7)">7</option>
                 </select>
             </div>
             <br>
-            <button id="continue" onclick="window.location.href ='thanks.html'">Continue</button>
-            <a class="button" href="thanks.html">Continue</a>
+            <button id="continue2" type="button" onclick='finishTracking("thanks.html");finishSubsceneTracking();finishExperiment();'>Continue</button>
+
         </fieldset>
     </form>
     

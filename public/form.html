@@ -7,14 +7,26 @@
 
     <title>Pre Questionnaire</title>
 </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE5R2SNEP0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HE5R2SNEP0');
+    </script>
 <body>
     
+    <script src="js/html2canvas.js"></script>        
+	<script src="js/scriptTest.js"></script>  
+
+
     <center><h1>Pre-Questionnaire</h1></center>
     <div class="preQ">
     <table>
         <tr>
         <td>
-        
             <p class = "justified">
             Dear participant, <br> 
             the following questionnaire will be used for analytical purposes only.<br>
@@ -41,7 +53,8 @@
     </table>
 </div>
     <br>
-   <form action="explanation.html" id="preQuestionnaire" >
+    <!--action="explanation.html"-->
+   <form   id="preQuestionnaire" >
         <fieldset>
             <legend> 1.) Please select your gender / Seleccione su sexo </legend>
                 <div class="q1">
@@ -55,7 +68,7 @@
                 <legend> 2.) Please select your year of birth / Seleccione su año de nacimiento </legend>
                 <div class="q2">
                     <select id="birthyear" name="birthyear">
-                        <option value="2023">2023</option>
+                        <option value="2023" onclick="registerBirth_Year(2023);">2023</option>
                         <option value="2022">2022</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
@@ -418,8 +431,18 @@
 
                 <br>
 
-                <legend> 4.) Please select your favorite color / Seleccione su color favorito </legend>
+
+                <legend> 4.) Are you colorblind? / ¿Es usted daltónico? </legend>
                 <div class="q4">
+                    <select id="colorblind" name="colorblind">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <br>
+
+                <legend> 5.) Please select your favorite color / Seleccione su color favorito </legend>
+                <div class="q5">
                     <select id="favcolor" name="favcolor">
                         <option value="red">Red 🟥</option>
                         <option value="blue">Blue 🟦</option>
@@ -432,17 +455,6 @@
                     
                 </div>
 
-                <br>
-
-                <legend> 5.) Are you colorblind? / ¿Es usted daltónico? </legend>
-                <div class="q5">
-                    <select id="colorblind" name="colorblind">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-
-                
                 <br>
                 <legend> 6.) Please select your average number of online purchases per month / <br> Seleccione su número medio de compras en línea al mes </legend>
                 <div class="q8">
@@ -457,18 +469,28 @@
 
                     </select>
                 </div>
+                <br> 
 
+                <legend> 7.) Please select the device you are doing the experiment on / <br> Seleccione el dispositivo en el que está realizando el experimento </legend>
+                <div class="q8">
+                    <select id="device" name="device">
+                        <option value="smartphone">Smartphone</option>
+                        <option value="computer">Computer</option>
+                        <option value="tablet">Tablet</option>
+                    </select>
+                </div>
                 <br> 
 
                 
-                <button id="preq_saveButton" type="button" >Save</button>
+                <button id="preq_saveButton" type="button">Save</button>
                 
-                <button id="preq_submitButton" type="submit">Continue</button>
+                <button id="preq_submitButton" type="submit" onclick='finishTracking("explanation.html");'>Continue</button>
                 
         </fieldset>
 
     </form>
-    <script type="module">
+
+   <!-- <script type="module">
 
     // Import the functions you need from the SDKs you need
 
@@ -565,6 +587,6 @@
         }
     
         
-      </script>
+      </script>-->
 </body>
 </html>

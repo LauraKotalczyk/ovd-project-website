@@ -1,13 +1,33 @@
 
 <html lang="en">
 <head>
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P9J4M5Z"></script>
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P9J4M5Z"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/experiment.css">
-    <title>Experiment</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this link if we use CSS-->
+        <link rel="stylesheet" href="css/experiment.css">
+        
+        <!-- this link if we use bulma
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+        
+        <script src="js/app.js"></script>
+        <add name="Access-Control-Allow-Origin" value="*" />
+    
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+       <!-- Tracking script -->
+    
+        <script src="js/html2canvas.js"></script>        
+        <script src="js/scriptTest.js"></script>  
+    
+        <script>window.onload=function()
+            {	           
+                initTracking(300);
+                registerUserData()
+            }
+        </script>
 </head>
 
     <!-- Google tag (gtag.js) -->
@@ -19,6 +39,7 @@
 
     gtag('config', 'G-HE5R2SNEP0');
     </script>
+
 <body>
     <div class="exp">
         <p id="exptext">Click on the smartphone category and then click on "buy".<br>
@@ -29,7 +50,7 @@
   <a id="NotGood" href="#bad">TV</a>
   <a id="NotGood4" href="#bad">Camera</a>
   <a id="NotGood2" href="#bad">Computers</a>
-  <a id="Good" href="smartphone.html">Smartphones</a>
+  <a id="Good" href="#good">Smartphones</a>
   <a id="NotGood3" href="#bad">Headphones</a>
 </div>
 
@@ -38,6 +59,8 @@ document.getElementById("NotGood").addEventListener("click", function(){ window.
 document.getElementById("NotGood2").addEventListener("click", function(){ window.alert('wrong category')});
 document.getElementById("NotGood3").addEventListener("click", function(){ window.alert('wrong category' )});
 document.getElementById("NotGood4").addEventListener("click", function(){ window.alert('wrong category')});
+
+document.getElementById("Good").addEventListener("click",function(){finishTracking('smartphone.html');finishSubsceneTracking()});
 </script>
 
 </body>

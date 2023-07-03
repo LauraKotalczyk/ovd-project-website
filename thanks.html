@@ -11,6 +11,23 @@
 
 
 <body>
+    <div id="google_translate_element"></div>  
+  
+    <!-- function which will translate the web page using google translator -->  
+  
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement(  
+                {pageLanguage: 'en'},  
+                'google_translate_element'  
+            );  
+        }  
+    </script>  
+  <!-- Script code for google translator API -->  
+  <script type="text/javascript"   
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
+  </script>  
+
     <div class="page-main">
         <div class="bienvenue" id="home">
                 <div>
@@ -20,13 +37,12 @@
                     <p class = "justified">
                     Please share the link to this experiment with anyone you know. 
                     </p>
-                    <h1>Gracias por dedicar su tiempo a participar !</h1>
+                    <!--<h1>Gracias por dedicar su tiempo a participar !</h1>
                     <p class = "justified">
                         Por favor comparta el enlace a este experimento con cualquier persona que conozca. 
-                    <br><br><br>
-                    <h4 style="font-style: italic;">https://ovd-research-project.web.app/ </h4>
+                    <br><br><br>-->
+                    <h4 style="font-style: italic;" translate="no">https://ovd-research-project.web.app/ </h4>
 
-                    <a href="index.html" type="button" >start again</a>
                     </p>
                 </div>
         </div>

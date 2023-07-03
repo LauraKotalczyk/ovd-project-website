@@ -25,7 +25,8 @@
         <script>window.onload=function()
             {	           
                 initTracking(300);
-                registerUserData()
+                registerUserData();
+                registerComponent(300,"Good",0,0,0,0,1,null);
             }
         </script>
 </head>
@@ -41,10 +42,10 @@
     </script>
 
 <body>
-    <div class="exp">
+   <!--<div class="exp">
         <p id="exptext">Click on the smartphone category and then click on "buy".<br>
         Clic en la categoría de smartphones y luego en "buy".<br>
-    </div>
+    </div>--> 
 
 <div class="topnav">
   <a id="NotGood" href="#bad">TV</a>
@@ -61,6 +62,8 @@ document.getElementById("NotGood3").addEventListener("click", function(){ window
 document.getElementById("NotGood4").addEventListener("click", function(){ window.alert('wrong category')});
 
 document.getElementById("Good").addEventListener("click",function(){finishTracking('smartphone.html');finishSubsceneTracking()});
+
+console.log(Good.getBoundingClientRect().x)
 </script>
 
 </body>

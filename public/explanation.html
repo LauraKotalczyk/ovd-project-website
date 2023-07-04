@@ -37,22 +37,39 @@
     </script>
 
 <body>
+    <div id="google_translate_element"></div>  
+  
+    <!-- function which will translate the web page using google translator -->  
+  
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement(  
+                {pageLanguage: 'en'},  
+                'google_translate_element'  
+            );  
+        }  
+    </script>  
+  <!-- Script code for google translator API -->  
+  <script type="text/javascript"   
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
+  </script>  
+    
     
     <div class="page-main">
     <div class="bienvenue" id="home">
             <div>
                 <h1>The experiment will begin</h1>
                     <p class = "justified">
-                        You are going to see a website on which you will have to click the smartphone category and the "buy" button afterwards to buy the product. <br>
+                        You are going to see a website on which you will have to click the Smartphone category and the <span translate="no"> "buy" </span> button afterwards to buy the product. <br>
                         <br>
                         Click on "Start" to begin.<br>
                     </p>
-                <h1>El experimento está a punto de comenzar</h1>
+                <!--<h1>El experimento está a punto de comenzar</h1>
                     <p class = "justified">
                         Usted va a ver un sitio web en el que usted tendrá que hacer clic en la categoría de smartphone y el botón "buy" después para comprar el producto.<br>
                             <br>
                             Haga clic en "Start" para empezar.<br>
-                    </p>
+                    </p>-->
                 <a class="button" id="startbtn" href="experiment.html">Start</a>
             </div>
            

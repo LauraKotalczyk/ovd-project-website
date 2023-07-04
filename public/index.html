@@ -41,7 +41,23 @@
     <title>Experiment</title>
 
 <body>
-    
+    <div id="google_translate_element"></div>  
+  
+    <!-- function which will translate the web page using google translator -->  
+  
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement(  
+                {pageLanguage: 'en'},  
+                'google_translate_element'  
+            );  
+        }  
+    </script>  
+  <!-- Script code for google translator API -->  
+  <script type="text/javascript"   
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
+  </script>  
+  
 
     <div class="page-main">
     <div class="bienvenue" id="home">
@@ -57,8 +73,8 @@
                         The experiment will take you less than 5 minutes. 
                         </p>
                         <br>
-                <h1>Estimado participante </h1>
-                <p class = "justified">
+                <!--<h1>Estimado participante </h1>
+                <p class = "justified" >
                     la información recogida en el siguiente experimento se utilizará únicamente con fines analíticos.
                     <br> 
                     Los datos recopilados se eliminarán posteriormente.
@@ -66,9 +82,10 @@
                     Gracias por dedicar su tiempo a participar en nuestro experimento.
                     <br> <br>
                     El experimento te llevará menos de 5 minutos.
-                    </p>
-                <button id="startButton" onclick="finishTracking('form.html');finishSubsceneTracking();">Start the experiment</button>
-                    
+                    </p>-->    
+                
+                    <button id="startButton" onclick="finishTracking('form.html');finishSubsceneTracking();">Start the experiment</button>
+                
                 
             </div>
            

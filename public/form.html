@@ -38,6 +38,23 @@
     gtag('config', 'G-HE5R2SNEP0');
     </script>
 <body>
+
+    <div id="google_translate_element"></div>  
+  
+    <!-- function which will translate the web page using google translator -->  
+  
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement(  
+                {pageLanguage: 'en'},  
+                'google_translate_element'  
+            );  
+        }  
+    </script>  
+  <!-- Script code for google translator API -->  
+  <script type="text/javascript"   
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
+  </script>  
     
    
 
@@ -56,7 +73,7 @@
             </p>
         
     </td>
-    <td>
+     <!-- <td>
             <p class = "justified">
             Estimado participante, <br> 
             el siguiente cuestionario se utilizará únicamente con fines de análisis.<br>
@@ -66,16 +83,16 @@
             El cuestionario le llevará menos de un minuto. 
             </p>
 
-    </td>
+    </td>-->
     </tr>
         
     </table>
 </div>
     <br>
-    <!--action="explanation.html"-->
+    <!---->
    <form   id="preQuestionnaire" >
         <fieldset>
-            <legend> 1.) Please select your gender / Seleccione su sexo </legend>
+            <legend> 1.) Please select your gender <!--/ Seleccione su sexo --></legend>
                 <div class="q1">
                     <select id="gender" name="gender">
                         <option value="blank" selected>  </option>
@@ -85,7 +102,7 @@
                     </select>
                 </div>
 
-                <legend> 2.) Please select your year of birth / Seleccione su año de nacimiento </legend>
+                <legend> 2.) Please select your year of birth <!--/ Seleccione su año de nacimiento--> </legend>
                 <div class="q2">
                     <select id="birthyear" name="birthyear">
                         <option value="blank" selected>  </option>
@@ -194,7 +211,7 @@
 
                 <br>
 
-                <legend> 3.) Please select your country / Seleccione su país</legend>
+                <legend> 3.) Please select your country <!--/ Seleccione su país--></legend>
                 <div class="q3"> 
                     <!-- using ISO-3166-1 Alpha-2 Codes @https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page-->
                     <select id="country" name="country">
@@ -449,7 +466,7 @@
                 <br>
 
 
-                <legend> 4.) Are you colorblind? / ¿Es usted daltónico? </legend>
+                <legend> 4.) Are you colorblind? <!--/ ¿Es usted daltónico?--> </legend>
                 <div class="q4">
                     <select id="colorblind" name="colorblind">
                         <option value="blank" selected>  </option>
@@ -459,7 +476,7 @@
                 </div>
                 <br>
 
-                <legend> 5.) Please select your favorite color / Seleccione su color favorito </legend>
+                <legend> 5.) Please select your favorite color <!--/ Seleccione su color favorito--> </legend>
                 <div class="q5">
                     <select id="favcolor" name="favcolor">
                         <option value="blank" selected>  </option>
@@ -475,7 +492,7 @@
                 </div>
 
                 <br>
-                <legend> 6.) Please select your average number of online purchases per month / <br> Seleccione su número medio de compras en línea al mes </legend>
+                <legend> 6.) Please select your average number of online purchases per month<!-- / <br> Seleccione su número medio de compras en línea al mes --></legend>
                 <div class="q8">
                     <select id="numberOfPurchasesAvg" name="numberOfPurchasesAvg">
                         <option value="blank" selected>  </option>
@@ -491,7 +508,7 @@
                 </div>
                 <br> 
 
-                <legend> 7.) Please select the device you are doing the experiment on / <br> Seleccione el dispositivo en el que está realizando el experimento </legend>
+                <legend> 7.) Please select the device you are doing the experiment on<!-- / <br> Seleccione el dispositivo en el que está realizando el experimento --></legend>
                 <div class="q8">
                     <select id="device" name="device">
                         <option value="blank" selected>  </option>
@@ -503,7 +520,7 @@
                 <br> 
 
                 
-                <button id="preq_saveButton" type="button" onclick='finishTracking("explanation.html");finishSubsceneTracking();'>Continue</button>
+                <button id="preq_saveButton" type="button" onclick='registeruserID(0);finishTracking("explanation.html");finishSubsceneTracking();'>Continue</button>
                 
                 
                 

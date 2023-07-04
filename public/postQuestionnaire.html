@@ -40,6 +40,23 @@
     </script>
     
 <body>
+    <div id="google_translate_element"></div>  
+  
+    <!-- function which will translate the web page using google translator -->  
+  
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement(  
+                {pageLanguage: 'en'},  
+                'google_translate_element'  
+            );  
+        }  
+    </script>  
+  <!-- Script code for google translator API -->  
+  <script type="text/javascript"   
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
+  </script>  
+
     <header>
     </header>
     <center><h1>Post-Questionnaire</h1></center>
@@ -60,14 +77,14 @@
                      Affective Computing, a Preliminary Study 2022-->
             
 
-            <td>
+            <!--<td>
                 <p class ="postQ">
                     El experimento ha terminado. Por favor, responda las siguientes preguntas con respecto a la tarea y el sitio web que ha visto. <br> <br>
 
                     Elija el número más adecuado para su experiencia con el sitio web. <br> <br> <br>
                 1 : Totalmente en desacuerdo <br>
                 7 : Totalmente de acuerdo <br>
-                </p>
+                </p>-->
 
             </td>
     </tr>
@@ -75,7 +92,7 @@
 </div>
     <form>
         <fieldset>
-            <legend> 1.) It was easy to read the text on the website with the used font / background color combination. / Era fácil leer el texto en el sitio web con la combinación de fuente / color de fondo utilizada.</legend>
+            <legend> 1.) It was easy to read the text on the website with the used font / background color combination. <!-- / Era fácil leer el texto en el sitio web con la combinación de fuente / color de fondo utilizada.--></legend>
             <div class="post_q1">
                 <select name="easyRead" id="easyRead">
                     <option value="blank" selected>  </option>
@@ -89,7 +106,7 @@
                 </select>
             </div>
             <br>
-            <legend> 2.) The color scheme of this website was appealing. / El esquema de color de este sitio web era atractivo. </legend>
+            <legend> 2.) The color scheme of this website was appealing. <!-- / El esquema de color de este sitio web era atractivo. --></legend>
             <div class="post_q2">
                 <select name="appealing" id="appealing">
                     <option value="blank" selected>  </option>
@@ -103,7 +120,7 @@
                 </select>
             </div>
             <br>
-            <legend> 3.) The use of the applied colors enhanced navigation. / El uso de los colores aplicados mejoró la navegación. </legend>
+            <legend> 3.) The use of the applied colors enhanced navigation.<!-- / El uso de los colores aplicados mejoró la navegación. --></legend>
             <div class="post_q3">
                 <select name="easyNav" id="easyNav">
                     <option value="blank" selected>  </option>

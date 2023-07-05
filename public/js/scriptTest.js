@@ -50,7 +50,7 @@
 		var emittingData = false;
 		
 	var idExperiment = 18;
-	var urlBase='http://156.35.82.106'
+	var urlBase='https://156.35.82.106'
 		
 		var url = urlBase + '/TrackerServer/restws/track';
 		var urlBackgroundTracker = urlBase + '/TrackerServer/restws/backgroundTracker';

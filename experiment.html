@@ -48,7 +48,7 @@
         Clic en la categoría de smartphones y luego en "buy".<br>
     </div>--> 
 
-<div class="topnav">
+<div id="topnav" class="topnav">
   <a id="NotGood" href="#bad">TV</a>
   <a id="NotGood4" href="#bad">Camera</a>
   <a id="NotGood2" href="#bad">Computers</a>
@@ -57,7 +57,7 @@
 </div>
 
 <script>
-document.getElementById("NotGood").addEventListener("click", function(){ window.alert('wrong category')});
+document.getElementById("NotGood").addEventListener("click", function(){window.alert('wrong category')});
 document.getElementById("NotGood2").addEventListener("click", function(){ window.alert('wrong category')});
 document.getElementById("NotGood3").addEventListener("click", function(){ window.alert('wrong category' )});
 document.getElementById("NotGood4").addEventListener("click", function(){ window.alert('wrong category')});
@@ -65,6 +65,9 @@ document.getElementById("NotGood4").addEventListener("click", function(){ window
 document.getElementById("Good").addEventListener("click",function(){finishTracking('smartphone.html');finishSubsceneTracking()});
 
 console.log(Good.getBoundingClientRect().x)
+
+ 
+
 </script>
 
 </body>

@@ -217,7 +217,7 @@ input[type=color] {
     display:inline-block;
     font-size: 15px;
     background-color: blue;
-    color: yellow;
+    color: #D1D016;
 }
 table{
     border-spacing: 10px;

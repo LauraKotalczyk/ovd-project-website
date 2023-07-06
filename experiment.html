@@ -57,15 +57,30 @@
 </div>
 
 <script>
-document.getElementById("NotGood").addEventListener("click", function(){window.alert('wrong category')});
+document.getElementById("NotGood").addEventListener("click", function(){ window.alert('wrong category')})
 document.getElementById("NotGood2").addEventListener("click", function(){ window.alert('wrong category')});
 document.getElementById("NotGood3").addEventListener("click", function(){ window.alert('wrong category' )});
 document.getElementById("NotGood4").addEventListener("click", function(){ window.alert('wrong category')});
 
-document.getElementById("Good").addEventListener("click",function(){finishTracking('smartphone.html');finishSubsceneTracking()});
+document.getElementById("Good").addEventListener("click",function(){test();finishTracking('smartphone.html');finishSubsceneTracking()});
 
 console.log(Good.getBoundingClientRect().x)
 
+function test(){
+// Récupère l'élément dont vous souhaitez récupérer la propriété CSS
+var element = document.querySelector('#Good');
+console.log(element);
+// Récupère les styles calculés pour cet élément
+var styles = window.getComputedStyle(element);
+console.log(styles);
+// Récupère la valeur de la propriété CSS souhaitée
+var value = styles.getPropertyValue('color');
+console.log(value);
+
+if (value=="rgb(209, 208, 22)" || value=="#d1d016" || value=="#D1D016"){
+        registeruserID(1)
+}else(registeruserID(2))
+}
  
 
 </script>

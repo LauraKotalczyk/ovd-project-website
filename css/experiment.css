@@ -5,6 +5,7 @@
     background-color: blue;
     overflow: hidden;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -18,6 +19,7 @@
     text-decoration: none;
     font-size: 20px;
     color: #D1D016;
+    font-family: 'Roboto', sans-serif;
 }
 
 .flotte {
@@ -31,8 +33,9 @@
 
 #BuyButton {
     background-color: blue;
-    color: yellow;
+    color: #D1D016;
     font-size: 18px;
     height: 30px;
     width: 80px;
+    font-family: 'Roboto', sans-serif;
 }

@@ -93,8 +93,10 @@
     </table>
 </div>
     <form>
+        <br>
         <fieldset>
             <legend> 1.) It was easy to read the text on the website with the used font / background color combination. <!-- / Era fácil leer el texto en el sitio web con la combinación de fuente / color de fondo utilizada.--></legend>
+            <br>
             <div class="post_q1">
                 <select name="easyRead" id="easyRead">
                     <option value=1 >1</option>
@@ -108,8 +110,9 @@
             </div>
             <br>
             <legend> 2.) The color scheme of this website was appealing. <!-- / El esquema de color de este sitio web era atractivo. --></legend>
+            <br>
             <div class="post_q2">
-                <select name="appealing" id="appealing">
+                <!--<select name="appealing" id="appealing">
                     <option value=1 >1</option>
                     <option value=2 >2</option>
                     <option value=3 >3</option>
@@ -117,10 +120,21 @@
                     <option value=5 >5</option>
                     <option value=6 >6</option>
                     <option value=7 >7</option>
-                </select>
+                </select>-->
+                <p>
+	
+                    1 <input type="radio" name="appealing" value=1  >
+                    2 <input type="radio" name="appealing" value=2  >
+                    3 <input type="radio" name="appealing" value=3  >
+                    4 <input type="radio" name="appealing" value=4  >
+                    5 <input type="radio" name="appealing" value=5  >
+                    6 <input type="radio" name="appealing" value=6  >
+                    7 <input type="radio" name="appealing" value=7  >
+                </p>
             </div>
             <br>
             <legend> 3.) The use of the applied colors enhanced navigation.<!-- / El uso de los colores aplicados mejoró la navegación. --></legend>
+            <br>
             <div class="post_q3">
                 <select name="easyNav" id="easyNav">
                     <option value="1" >1</option>
@@ -139,8 +153,9 @@
                 var REasyRead = document.getElementById('easyRead').value;
                 registereasyRead(REasyRead);
 
-                var RAppealing = document.getElementById('appealing').value;
+                var RAppealing = document.querySelector('input[name="appealing"]:checked').value;
                 registerappealingColor(RAppealing);
+
                 
                 var REasyNav = document.getElementById('easyNav').value;
                 registereasyNav(REasyNav);

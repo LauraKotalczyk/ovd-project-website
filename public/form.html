@@ -1,9 +1,9 @@
 <html lang="en">
 <head>
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P9J4M5Z"></script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P9J4M5Z"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- this link if we use CSS-->
     <link rel="stylesheet" href="css/style.css">
@@ -97,7 +97,7 @@
             <legend> 1.) Please select your gender <!--/ Seleccione su sexo --></legend>
                 <div class="q1">
                     <select id="gender" name="gender">
-                        <option value="blank" selected>  </option>
+                        <option value="-" selected>  </option>
                         <option value="male" >Male</option>
                         <option value="female" >Female</option>
                         <option value="other" >Other</option>
@@ -219,7 +219,7 @@
                 <div class="q3"> 
                     <!-- using ISO-3166-1 Alpha-2 Codes @https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page-->
                     <select id="country" name="country">
-                        <option value="blank" selected>  </option>
+                        <option value="-" selected>  </option>
                         <option value="AF" >Afghanistan</option>
                         <option value="AX" >Åland Islands</option>
                         <option value="AL" >Albania</option>
@@ -471,7 +471,7 @@
                 <legend> 4.) Are you colorblind? <!--/ ¿Es usted daltónico?--> </legend>
                 <div class="q4">
                     <select id="colorblind" name="colorblind">
-                        <option value="blank" selected>  </option>
+                        <option value="-" selected>  </option>
                         <option value="yes" >Yes</option>
                         <option value="no" >No</option>
                     </select>
@@ -481,7 +481,7 @@
                 <legend> 5.) Please select your favorite color <!--/ Seleccione su color favorito--> </legend>
                 <div class="q5">
                     <select id="favcolor" name="favcolor">
-                        <option value="blank" selected>  </option>
+                        <option value="-" selected>  </option>
                         <option value="red"  >Red 🟥</option>
                         <option value="blue"  >Blue 🟦</option>
                         <option value="yellow"  >Yellow 🟨</option>
@@ -513,10 +513,10 @@
                 <legend> 7.) Please select the device you are doing the experiment on<!-- / <br> Seleccione el dispositivo en el que está realizando el experimento --></legend>
                 <div class="q8">
                     <select id="device" name="device">
-                        <option value="blank" selected>  </option>
-                        <option value="smartphone" >Smartphone</option>
-                        <option value="computer" >Computer</option>
-                        <option value="tablet" >Tablet</option>
+                        <option value="-" selected>  </option>
+                        <option value="smartphone" >Smartphone 📱</option>
+                        <option value="computer" >Computer 💻</option>
+                        <option value="tablet" >Tablet 📱</option>
                     </select>
                 </div>
                 <br> 
@@ -544,10 +544,12 @@
 
                     var RDevice= document.getElementById('device').value;
                     registerdevice(RDevice);
+                    
+                    
 
                  }
                  </script>
-                
+
                 <button id="preq_saveButton" type="button" onclick='RegisterData();finishTracking("explanation.html");finishSubsceneTracking();'>Continue</button>
                 
                 

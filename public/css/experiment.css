@@ -5,6 +5,7 @@
     background-color: blue;
     overflow: hidden;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -12,13 +13,13 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 20px;
     display: inline-block;
     text-decoration: none;
     font-size: 20px;
     color: #D1D016;
+    font-family: 'Roboto', sans-serif;
 }
 
 .flotte {
@@ -36,4 +37,5 @@
     font-size: 18px;
     height: 30px;
     width: 80px;
+    font-family: 'Roboto', sans-serif;
 }

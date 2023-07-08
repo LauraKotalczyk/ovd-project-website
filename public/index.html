@@ -17,10 +17,11 @@
 
     gtag('config', 'G-HE5R2SNEP0');
     </script>
+
+    <!-- Cloud Localization library import: -->
+    <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
     
-    <!-- this link if we use bulma
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
-    
+    <!-- other JS imports-->
     <script src="js/app.js"></script>
     <add name="Access-Control-Allow-Origin" value="*" />
 
@@ -43,52 +44,48 @@
     <title>Experiment</title>
 
 <body>
-    <div id="google_translate_element"></div>  
+    <!-- <div id="google_translate_element"></div>  -->
   
     <!-- function which will translate the web page using google translator -->  
   
-    <script type="text/javascript">  
+    <!-- <script type="text/javascript">  
         function googleTranslateElementInit() {  
             new google.translate.TranslateElement(  
                 {pageLanguage: 'en'},  
                 'google_translate_element'  
             );  
         }  
-    </script>  
+    </script>  --> 
+
   <!-- Script code for google translator API -->  
-  <script type="text/javascript"   
+  <!-- <script type="text/javascript"   
   src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
-  </script>  
+  </script>   -->
   
 
     <div class="page-main">
-    <div class="bienvenue" id="home">
-            <div>
-                <h1>Dear participant</h1>
-                    <p class = "justified">
-                        the information gathered from the following experiment will be used for analytical purposes only.
+    <div class="bienvenue translate" id="home">
+            <div class="intro translate">
+                <!-- <h1 class="translate">Dear participant</h1> -->
+                    <div class = "justified translate">
+                        <p>Dear participant, the data gathered from the following experiment will be used for analytical purposes only.</p>
+                        <p>The collected data will be deleted afterwards.</p>
+                        <p>Thank you for taking the time to participate in our experiment.</p>
+                        <p>The experiment will take you less than 5 minutes.</p>
                         <br>
-                        The collected data will be deleted afterwards.
-                        <br> <br>
-                        Thank you for taking the time to participate in our experiment.
-                        <br> <br>
-                        The experiment will take you less than 5 minutes.
-                        <br> <br>
-                        ! It is recommended to use Google Chrome for this experiment.
+                        <p>! It is recommended to use Google Chrome for this experiment.</p>
+                        <br>
+                    </div>
+                        <div class ="note translate">
+                        <p> 
+                            <strong>You can change the language of the experiment here.</strong>
+                            <!-- Language selection dropdown -->
+                            <select class="cloudlocalization-selection"></select>
                         </p>
                         <br>
-                <!--<h1>Estimado participante </h1>
-                <p class = "justified" >
-                    la información recogida en el siguiente experimento se utilizará únicamente con fines analíticos.
-                    <br> 
-                    Los datos recopilados se eliminarán posteriormente.
-                    <br> <br>
-                    Gracias por dedicar su tiempo a participar en nuestro experimento.
-                    <br> <br>
-                    El experimento te llevará menos de 5 minutos.
-                    </p>-->    
                 
                     <button id="startButton" onclick="finishTracking('form.html');finishSubsceneTracking();">Start the experiment</button>
+                </div>
                 
                 
             </div>
@@ -96,5 +93,6 @@
     </div>
 </div>
 
+<script src="js/localization.js"></script>
 </body>
 </html>

@@ -24,8 +24,16 @@
     
         <script src="js/html2canvas.js"></script>        
         <script src="js/scriptTest.js"></script>  
+
+
+        <!-- Cloud Localization library import: -->
+        <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
     
     
+        <select class="cloudlocalization-selection" selected hidden></class></select>
+
+
+
     <title>Explanation</title>
 </head>
 
@@ -43,24 +51,19 @@
     
     <div class="page-main">
     <div class="bienvenue" id="home">
-            <div>
+            <div class="translate">
                 <h1>The experiment will begin</h1>
                     <p class = "justified">
-                        You are going to see a website on which you will have to click the Smartphone category and the <span translate="no"> "buy" </span> button afterwards to buy the product. <br>
+                        You are going to see a website on which you will have to click the Smartphone category and the button afterwards to buy the product. <br>
                         <br>
-                        Click on "Start" to begin.<br>
+                        <p class="sidenote">Click on 'Start' to begin.</p>
                     </p>
-                <!--<h1>El experimento está a punto de comenzar</h1>
-                    <p class = "justified">
-                        Usted va a ver un sitio web en el que usted tendrá que hacer clic en la categoría de smartphone y el botón "buy" después para comprar el producto.<br>
-                            <br>
-                            Haga clic en "Start" para empezar.<br>
-                    </p>-->
                 <a class="button" id="startbtn" href="experiment.html">Start</a>
             </div>
            
     </div>
 </div>
 
+<script src="js/localization.js"></script>
 </body>
 </html>

@@ -140,6 +140,11 @@ label {
     font-family: 'Roboto', sans-serif;
 }
 
+.sidenote {
+    text-align: left;
+    margin-left: 0.5em;
+}
+
 .preQ {
     border: 1px solid black;
     margin-left: 0.5em;
@@ -156,13 +161,15 @@ div {
 input[type=radio] {
     transform: scale(1);
     margin-right: -140;
-    margin-left: -50;
-    font-family: 'Roboto', sans-serif;
+    margin-left: -20;
+    font-family: 'Roboto', sans-serif;;
+
 }
+
 
 .q1 {
     margin-top: 0.5em;
-    margin-left : 28;
+    margin-left : -100;
     margin-bottom: 0.5em;
     font-family: 'Roboto', sans-serif;
 }
@@ -181,7 +188,7 @@ input[type=radio] {
 
 .q4 {
     margin-top: 0.5em;
-    margin-left : 28;
+    margin-left : -100;
 }
 
 .q5 {
@@ -198,15 +205,18 @@ input[type=radio] {
 
 .q7 {
     margin-top: 0.5em;
-    margin-left : -65;
-    
+    margin-left : -65;    
 }
 
 .q8 {
     margin-top: 0.5em;
-    margin-right: -250;
     margin-left : 28;
-    
+    font-family: 'Roboto', sans-serif;
+}
+
+.q9 {
+    margin-top: 0.5em;
+    margin-left : -100;    
 }
 
 

@@ -1,155 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P9J4M5Z"></script>
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- this link if we use CSS-->
-        <link rel="stylesheet" href="css/style.css">
-        
-        <!-- this link if we use bulma
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this link if we use CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- this link if we use bulma
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
-        
-        <script src="js/app.js"></script>
-        <add name="Access-Control-Allow-Origin" value="*" />
-    
-        <!-- jQuery -->
-<!-- Old jQuery <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>            
-       <!-- Tracking script -->
-    
-        <script src="js/html2canvas.js"></script>        
-        <script src="js/scriptTest.js"></script>  
+
+    <script src="js/app.js"></script>
+    <add name="Access-Control-Allow-Origin" value="*" />
+
+    <!-- jQuery -->
+    <!-- Old jQuery <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tracking script -->
+
+    <script src="js/html2canvas.js"></script>
+    <script src="js/scriptTest.js"></script>
+
+    <!-- Cloud Localization library import: -->
+    <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+
+
+    <select class="cloudlocalization-selection" selected hidden></class></select>
+
     <title>Post Questionnaire</title>
-    
-    <script>window.onload=function()
-        {	           
+
+    <script>window.onload = function () {
             initTracking(400);
         }
     </script>
 </head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE5R2SNEP0"></script>
-    <script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HE5R2SNEP0"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-HE5R2SNEP0');
-    </script>
-    
+</script>
+
 <body>
     <header>
     </header>
-    <center><h1>Post-Questionnaire</h1></center>
-<div class="postQQ">  
-    <table>
-        <tr>
-        <td>
-            
-                <p class ="postQ">
-                    The experiment is finished. Please answer the following questions with respect to the task and website you have seen.<br> <br>
-                    
-                    Choose the most number the most suitable for your experience with the website. <br> <br>
-                    1 : Strongly disagree <br>
-                    7 : Strongly agree <br>
-                </p>
-                
-                <!-- reference : Towards Evaluating e-Commerce Sites Purchase Intention using
+    <center>
+        <h1 class="translate">Post-Questionnaire</h1>
+    </center>
+    <div class="postQQ">
+        <table>
+            <tr>
+                <td>
+                    <div class="translate">
+                        <p class="postQ">
+                            The experiment is finished. Please answer the following questions with respect to the task and website you have seen.
+                        </p>
+                        <p class="postQ">
+                            Choose the most number the most suitable for your experience with the website.
+                        </p>
+                        <p class="postQ">
+                            1 : Strongly disagree
+                        </p>
+                        <p class="postQ">
+                            7 : Strongly agree
+                        </p>
+                    </div>
+
+                    <!-- reference : Towards Evaluating e-Commerce Sites Purchase Intention using
                      Affective Computing, a Preliminary Study 2022-->
-            
 
-            <!--<td>
-                <p class ="postQ">
-                    El experimento ha terminado. Por favor, responda las siguientes preguntas con respecto a la tarea y el sitio web que ha visto. <br> <br>
-
-                    Elija el número más adecuado para su experiencia con el sitio web. <br> <br> <br>
-                1 : Totalmente en desacuerdo <br>
-                7 : Totalmente de acuerdo <br>
-                </p>-->
-
-            </td>
-    </tr>
-    </table>
-</div>
+                </td>
+            </tr>
+        </table>
+    </div>
     <form>
         <br>
         <fieldset>
-            <legend> 1.) It was easy to read the text on the website with the used font / background color combination. <!-- / Era fácil leer el texto en el sitio web con la combinación de fuente / color de fondo utilizada.--></legend>
+            <div class="translate">
+                <legend>1.) It was easy to read the text on the website with the used font / background color combination.
+                </legend>
+            </div>
             <br>
             <div class="post_q1">
-                <select name="easyRead" id="easyRead">
-                    <option value=1 >1</option>
-                    <option value=2 >2</option>
-                    <option value=3 >3</option>
-                    <option value=4 >4</option>
-                    <option value=5 >5</option>
-                    <option value=6 >6</option>
-                    <option value=7 >7</option>
-                </select>
+                1 <input type="radio" name="easyRead" value=1 required>
+                2 <input type="radio" name="easyRead" value=2 required>
+                3 <input type="radio" name="easyRead" value=3 required>
+                4 <input type="radio" name="easyRead" value=4 required>
+                5 <input type="radio" name="easyRead" value=5 required>
+                6 <input type="radio" name="easyRead" value=6 required>
+                7 <input type="radio" name="easyRead" value=7 required>
             </div>
             <br>
-            <legend> 2.) The color scheme of this website was appealing. <!-- / El esquema de color de este sitio web era atractivo. --></legend>
+            <div class="translate">
+                <legend>2.) The color scheme of this website was appealing.</legend>
+            </div>
             <br>
             <div class="post_q2">
-                <!--<select name="appealing" id="appealing">
-                    <option value=1 >1</option>
-                    <option value=2 >2</option>
-                    <option value=3 >3</option>
-                    <option value=4 >4</option>
-                    <option value=5 >5</option>
-                    <option value=6 >6</option>
-                    <option value=7 >7</option>
-                </select>-->
-                <p>
-	
-                    1 <input type="radio" name="appealing" value=1  >
-                    2 <input type="radio" name="appealing" value=2  >
-                    3 <input type="radio" name="appealing" value=3  >
-                    4 <input type="radio" name="appealing" value=4  >
-                    5 <input type="radio" name="appealing" value=5  >
-                    6 <input type="radio" name="appealing" value=6  >
-                    7 <input type="radio" name="appealing" value=7  >
-                </p>
+                1 <input type="radio" name="appealing" value=1 required>
+                2 <input type="radio" name="appealing" value=2 required>
+                3 <input type="radio" name="appealing" value=3 required>
+                4 <input type="radio" name="appealing" value=4 required>
+                5 <input type="radio" name="appealing" value=5 required>
+                6 <input type="radio" name="appealing" value=6 required>
+                7 <input type="radio" name="appealing" value=7 required>
             </div>
             <br>
-            <legend> 3.) The use of the applied colors enhanced navigation.<!-- / El uso de los colores aplicados mejoró la navegación. --></legend>
+            <div class="translate">
+                <legend>3.) The use of the applied colors enhanced navigation.</legend>
+            </div>
             <br>
             <div class="post_q3">
-                <select name="easyNav" id="easyNav">
-                    <option value="1" >1</option>
-                    <option value="2" >2</option>
-                    <option value="3" >3</option>
-                    <option value="4" >4</option>
-                    <option value="5" >5</option>
-                    <option value="6" >6</option>
-                    <option value="7" >7</option>
-                </select>
+                1 <input type="radio" name="easyNav" value=1 required>
+                2 <input type="radio" name="easyNav" value=2 required>
+                3 <input type="radio" name="easyNav" value=3 required>
+                4 <input type="radio" name="easyNav" value=4 required>
+                5 <input type="radio" name="easyNav" value=5 required>
+                6 <input type="radio" name="easyNav" value=6 required>
+                7 <input type="radio" name="easyNav" value=7 required>
             </div>
             <br>
 
-            <script>  
-                function RegisterData2() { 
-                var REasyRead = document.getElementById('easyRead').value;
-                registereasyRead(REasyRead);
+            <script>
+                function RegisterData2() {
+                    var REasyRead = document.querySelector('input[name="easyRead"]:checked').value;
+                    registereasyRead(REasyRead);
 
-                var RAppealing = document.querySelector('input[name="appealing"]:checked').value;
-                registerappealingColor(RAppealing);
+                    var RAppealing = document.querySelector('input[name="appealing"]:checked').value;
+                    registerappealingColor(RAppealing);
 
-                
-                var REasyNav = document.getElementById('easyNav').value;
-                registereasyNav(REasyNav);
-              
 
-             }
-             </script>
-            <button id="continue2" type="button" onclick='RegisterData2();finishTracking("thanks.html");finishSubsceneTracking();finishExperiment();'>Continue</button>
+                    var REasyNav = document.querySelector('input[name="easyNav"]:checked').value;
+                    registereasyNav(REasyNav);
 
+
+                }
+            </script>
+            <div class="translate">
+                <button id="continue2" type="button"
+                    onclick='RegisterData2();finishTracking("thanks.html");finishSubsceneTracking();finishExperiment();'>Continue</button>
+            </div>
         </fieldset>
     </form>
-    
+
+    <script src="js/localization.js"></script>
+
 </body>
+
 </html>

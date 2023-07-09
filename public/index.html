@@ -80,7 +80,7 @@
                         <p> 
                             <strong>You can change the language of the experiment here.</strong>
                             <!-- Language selection dropdown -->
-                            <select class="cloudlocalization-selection"></select>
+                            <select id="language" class="cloudlocalization-selection"></select>
                         </p>
                         <br>
                 
@@ -89,10 +89,20 @@
                 
                 
             </div>
+
            
     </div>
 </div>
 
 <script src="js/localization.js"></script>
+<script src="js/app.js"></script>
+<!-- probably not needed 
+    <script> 
+    var chosenLanguage = document.getElementById('language').value;
+    console.log(chosenLanguage);
+    // set global variable in app.js
+    setChosenLanguage(chosenLanguage);
+</script>
+-->
 </body>
 </html>

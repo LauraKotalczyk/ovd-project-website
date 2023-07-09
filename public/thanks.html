@@ -7,8 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Cloud Localization library import: -->
+    <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+    
+
     <title>Thank you</title>
+
+    <select class="cloudlocalization-selection" selected hidden></class></select>
 </head>
+
+
 
 
 <body>
@@ -16,12 +27,12 @@
     <div class="page-main">
         <div class="bienvenue" id="home">
                 <div>
-                    <h1>
-                        Thank you for taking the time to participate !
+                    <h1 class="translate">
+                        Thank you for taking the time to participate!
                     </h1>
-                    <p class = "justified">
-                    Please share the link to this experiment with anyone you know. 
-                    </p>
+                    <div class = "justified translate">
+                        Please share the link to this experiment with anyone you know. 
+                    </div>
                     <h4 style="font-style: italic;" translate="no">https://ovd-research-project.web.app/ </h4>
 
                     </p>
@@ -29,10 +40,12 @@
         </div>
     </div>
     <footer>
-        <p style="font-style: italic;text-align: center;">Authors: Laura Kotalczyk, Léonie Berton</p>
+        <div class="translate">
+            <p style="font-style: italic;text-align: center;">Authors: Laura Kotalczyk, Léonie Berton</p>
+        </div>
     </footer>
             
                     
-   
+    <script src="js/localization.js"></script>  
 </body>
 </html>

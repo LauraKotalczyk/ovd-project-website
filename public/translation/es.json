@@ -23,9 +23,932 @@
         "o": "You can change the language of the experiment here.",
         "t": "Puedes cambiar el idioma del experimento aquí."
     },
-
     {
         "o": "Start the experiment",
         "t": "Iniciar el experimento"
+    },
+    {
+        "o": "Pre-Questionnaire",
+        "t": "Cuestionario previo"
+    },
+    {
+        "o": "Dear participant,",
+        "t": "Estimado participante,"
+    },
+    {
+        "o": "the following questionnaire will be used for analytical purposes only.",
+        "t": "el siguiente cuestionario se utilizará únicamente con fines analíticos."
+    },
+    {
+        "o": "Please answer the questions truthfully.",
+        "t": "Por favor conteste las preguntas con la verdad."
+    },
+    {
+        "o": "The questionnaire will take you less than a minute.",
+        "t": "El cuestionario le llevará menos de un minuto."
+    },
+    {
+        "o": "1.) Please select your gender",
+        "t": "1.) Por favor seleccione su sexo"
+    },
+    {
+        "o": "2.) Please select your year of birth",
+        "t": "2.) Por favor seleccione su año de nacimiento"
+    },
+    {
+        "o": "3.) Please select your country",
+        "t": "3.) Por favor, seleccione su país"
+    },
+    {
+        "o": "4.) Are you colorblind?",
+        "t": "4.) ¿Eres daltónico?"
+    },
+    {
+        "o": "5.) Please select your favorite color",
+        "t": "5.) Por favor seleccione su color favorito"
+    },
+    {
+        "o": "6.) Please select your average number of online purchases per month",
+        "t": "6.) Por favor, seleccione su número medio de compras en línea por mes"
+    },
+    {
+        "o": "7.) Please select the device you are doing the experiment on",
+        "t": "7. ) Por favor, seleccione el dispositivo en el que está realizando el experimento"
+    },
+    {
+        "o": "Continue",
+        "t": "Continuar"
+    },
+    {
+        "o": "Red 🟥",
+        "t": "Rojo 🟥"
+    },
+    {
+        "o": "Blue 🟦",
+        "t": "Azul 🟦"
+    },
+    {
+        "o": "Yellow 🟨",
+        "t": "Amarillo 🟨"
+    },
+    {
+        "o": "Orange 🟧",
+        "t": "Naranja 🟧"
+    },
+    {
+        "o": "Green 🟩",
+        "t": "Verde 🟩"
+    },
+    {
+        "o": "Purple 🟪",
+        "t": "Morado 🟪"
+    },
+    {
+        "o": "Other",
+        "t": "Otro"
+    },
+    {
+        "o": "Smartphone 📱",
+        "t": "Teléfono inteligente 📱"
+    },
+    {
+        "o": "Computer 💻",
+        "t": "Computadora 💻"
+    },
+    {
+        "o": "Tablet 📱",
+        "t": "Tableta 📱"
+    },
+    {
+        "o": "Male",
+        "t": "Masculino"
+    },
+    {
+        "o": "Female",
+        "t": "Femenino"
+    },
+    {
+        "o": "Other",
+        "t": "Otro"
+    },
+    {
+        "o": "Afghanistan",
+        "t": "Afganistán"
+    },
+    {
+        "o": "Åland Islands",
+        "t": "Islas Åland"
+    },
+    {
+        "o": "Albania",
+        "t": "Albania"
+    },
+    {
+        "o": "Algeria",
+        "t": "Argelia"
+    },
+    {
+        "o": "American Samoa",
+        "t": "Samoa Americana"
+    },
+    {
+        "o": "Andorra",
+        "t": "Andorra"
+    },
+    {
+        "o": "Angola",
+        "t": "Angola"
+    },
+    {
+        "o": "Anguilla",
+        "t": "Anguilla"
+    },
+    {
+        "o": "Antarctica",
+        "t": "Antártida"
+    },
+    {
+        "o": "Antigua and Barbuda",
+        "t": "Antigua y Barbuda"
+    },
+    {
+        "o": "Argentina",
+        "t": "Argentina"
+    },
+    {
+        "o": "Armenia",
+        "t": "Armenia"
+    },
+    {
+        "o": "Aruba",
+        "t": "Aruba"
+    },
+    {
+        "o": "Australia",
+        "t": "Australia"
+    },
+    {
+        "o": "Austria",
+        "t": "Austria"
+    },
+    {
+        "o": "Azerbaijan",
+        "t": "Azerbaiyán"
+    },
+    {
+        "o": "Bahamas",
+        "t": "Bahamas"
+    },
+    {
+        "o": "Bahrain",
+        "t": "Baréin"
+    },
+    {
+        "o": "Bangladesh",
+        "t": "Bangladés"
+    },
+    {
+        "o": "Barbados",
+        "t": "Barbados"
+    },
+    {
+        "o": "Belarus",
+        "t": "Bielorrusia"
+    },
+    {
+        "o": "Belgium",
+        "t": "Bélgica"
+    },
+    {
+        "o": "Belize",
+        "t": "Belice"
+    },
+    {
+        "o": "Benin",
+        "t": "Benín"
+    },
+    {
+        "o": "Bermuda",
+        "t": "Bermudas"
+    },
+    {
+        "o": "Bhutan",
+        "t": "Bután"
+    },
+    {
+        "o": "Bolivia",
+        "t": "Bolivia"
+    },
+    {
+        "o": "Bonaire",
+        "t": "Bonaire"
+    },
+    {
+        "o": "Bosnia and Herzegovina",
+        "t": "Bosnia y Herzegovina"
+    },
+    {
+        "o": "Botswana",
+        "t": "Botsuana"
+    },
+    {
+        "o": "Bouvet Island",
+        "t": "Isla Bouvet"
+    },
+    {
+        "o": "Brazil",
+        "t": "Brasil"
+    },
+    {
+        "o": "British Indian Ocean Territory",
+        "t": "Territorio Británico del Océano Índico"
+    },
+    {
+        "o": "Brunei Darussalam",
+        "t": "Brunei Darussalam"
+    },
+    {
+        "o": "Bulgaria",
+        "t": "Bulgaria"
+    },
+    {
+        "o": "Burkina Faso",
+        "t": "Burkina Faso"
+    },
+    {
+        "o": "Burundi",
+        "t": "Burundi"
+    },
+    {
+        "o": "Cambodia",
+        "t": "Camboya"
+    },
+    {
+        "o": "Cameroon",
+        "t": "Camerún"
+    },
+    {
+        "o": "Canada",
+        "t": "Canadá"
+    },
+    {
+        "o": "Cape Verde",
+        "t": "Cabo Verde"
+    },
+    {
+        "o": "Cayman Islands",
+        "t": "Islas Caimán"
+    },
+    {
+        "o": "Central African Republic",
+        "t": "República Centroafricana"
+    },
+    {
+        "o": "Chad",
+        "t": "Chad"
+    },
+    {
+        "o": "Chile",
+        "t": "Chile"
+    },
+    {
+        "o": "China",
+        "t": "China"
+    },
+    {
+        "o": "Colombia",
+        "t": "Colombia"
+    },
+    {
+        "o": "Comoros",
+        "t": "Comoras"
+    },
+    {
+        "o": "Congo",
+        "t": "Congo"
+    },
+    {
+        "o": "Congo,Democratic Republic",
+        "t": "Congo,República Democrática del"
+    },
+    {
+        "o": "Cook Islands",
+        "t": "Islas Cook"
+    },
+    {
+        "o": "Costa Rica",
+        "t": "Costa Rica"
+    },
+    {
+        "o": "Côte d'Ivoire",
+        "t": "Costa de Marfil"
+    },
+    {
+        "o": "Croatia",
+        "t": "Croacia"
+    },
+    {
+        "o": "Cuba",
+        "t": "Cuba"
+    },
+    {
+        "o": "Curaçao",
+        "t": "Curazao"
+    },
+    {
+        "o": "Cyprus",
+        "t": "Chipre"
+    },
+    {
+        "o": "Czech Republic",
+        "t": "República Checa"
+    },
+    {
+        "o": "Denmark",
+        "t": "Dinamarca"
+    },
+    {
+        "o": "Djibouti",
+        "t": "Djibouti"
+    },
+    {
+        "o": "Dominica",
+        "t": "Dominica"
+    },
+    {
+        "o": "Dominican Republic",
+        "t": "República Dominicana"
+    },
+    {
+        "o": "Ecuador",
+        "t": "Ecuador"
+    },
+    {
+        "o": "Egypt",
+        "t": "Egipto"
+    },
+    {
+        "o": "El Salvador",
+        "t": "El Salvador"
+    },
+    {
+        "o": "Equatorial Guinea",
+        "t": "Guinea Ecuatorial"
+    },
+    {
+        "o": "Eritrea",
+        "t": "Eritrea"
+    },
+    {
+        "o": "Estonia",
+        "t": "Estonia"
+    },
+    {
+        "o": "Ethiopia",
+        "t": "Etiopía"
+    },
+    {
+        "o": "Falkland Islands (Malvinas)",
+        "t": "Islas Malvinas (Falkland)"
+    },
+    {
+        "o": "Faroe Islands",
+        "t": "Islas Feroe"
+    },
+    {
+        "o": "Fiji",
+        "t": "Fiji"
+    },
+    {
+        "o": "Finland",
+        "t": "Finlandia"
+    },
+    {
+        "o": "France",
+        "t": "Francia"
+    },
+    {
+        "o": "French Guiana",
+        "t": "Guayana Francesa"
+    },
+    {
+        "o": "French Polynesia",
+        "t": "Polinesia Francesa"
+    },
+    {
+        "o": "Gabon",
+        "t": "Gabón"
+    },
+    {
+        "o": "Gambia",
+        "t": "Gambia"
+    },
+    {
+        "o": "Georgia",
+        "t": "Georgia"
+    },
+    {
+        "o": "Germany",
+        "t": "Alemania"
+    },
+    {
+        "o": "Ghana",
+        "t": "Ghana"
+    },
+    {
+        "o": "Gibraltar",
+        "t": "Gibraltar"
+    },
+    {
+        "o": "Greece",
+        "t": "Grecia"
+    },
+    {
+        "o": "Greenland",
+        "t": "Groenlandia"
+    },
+    {
+        "o": "Grenada",
+        "t": "Granada"
+    },
+    {
+        "o": "Guam",
+        "t": "Guam"
+    },
+    {
+        "o": "Guatemala",
+        "t": "Guatemala"
+    },
+    {
+        "o": "Guernsey",
+        "t": "Guernsey"
+    },
+    {
+        "o": "Guinea",
+        "t": "Guinea"
+    },
+    {
+        "o": "Guinea-Bissau",
+        "t": "Guinea-Bissau"
+    },
+    {
+        "o": "Guyana",
+        "t": "Guyana"
+    },
+    {
+        "o": "Haiti",
+        "t": "Haití"
+    },
+    {
+        "o": "Heard Island and McDonald Islands",
+        "t": "Islas Heard y McDonald"
+    },
+    {
+        "o": "Holy See (Vatican City State)",
+        "t": "Ciudad del Vaticano"
+    },
+    {
+        "o": "Honduras",
+        "t": "Honduras"
+    },
+    {
+        "o": "Hong Kong",
+        "t": "Hong Kong"
+    },
+    {
+        "o": "Hungary",
+        "t": "Hungría"
+    },
+    {
+        "o": "Iceland",
+        "t": "Islandia"
+    },
+    {
+        "o": "India",
+        "t": "India"
+    },
+    {
+        "o": "Indonesia",
+        "t": "Indonesia"
+    },
+    {
+        "o": "Iran",
+        "t": "Irán"
+    },
+    {
+        "o": "Iraq",
+        "t": "Iraq"
+    },
+    {
+        "o": "Ireland",
+        "t": "Irlanda"
+    },
+    {
+        "o": "Isle of Man",
+        "t": "Isla de Man"
+    },
+    {
+        "o": "Israel",
+        "t": "Israel"
+    },
+    {
+        "o": "Italy",
+        "t": "Italia"
+    },
+    {
+        "o": "Japan",
+        "t": "Japón"
+    },
+    {
+        "o": "Jordan",
+        "t": "Jordania"
+    },
+    {
+        "o": "Kazakhstan",
+        "t": "Kazajstán"
+    },
+    {
+        "o": "Korea",
+        "t": "Corea"
+    },
+    {
+        "o": "Kyrgyzstan",
+        "t": "Kirguistán"
+    },
+    {
+        "o": "Latvia",
+        "t": "Letonia"
+    },
+    {
+        "o": "Lebanon",
+        "t": "Líbano"
+    },
+    {
+        "o": "Libya",
+        "t": "Libia"
+    },
+    {
+        "o": "Lithuania",
+        "t": "Lituania"
+    },
+    {
+        "o": "Luxembourg",
+        "t": "Luxemburgo"
+    },
+    {
+        "o": "Malaysia",
+        "t": "Malasia"
+    },
+    {
+        "o": "Maldives",
+        "t": "Maldivas"
+    },
+    {
+        "o": "Mali",
+        "t": "Malí"
+    },
+    {
+        "o": "Marshall Islands",
+        "t": "Islas Marshall"
+    },
+    {
+        "o": "Martinique",
+        "t": "Martinica"
+    },
+    {
+        "o": "Mauritius",
+        "t": "Mauricio"
+    },
+    {
+        "o": "Mexico",
+        "t": "México"
+    },
+    {
+        "o": "Monaco",
+        "t": "Mónaco"
+    },
+    {
+        "o": "Morocco",
+        "t": "Marruecos"
+    },
+    {
+        "o": "Netherlands",
+        "t": "Países Bajos"
+    },
+    {
+        "o": "New Caledonia",
+        "t": "Nueva Caledonia"
+    },
+    {
+        "o": "New Zealand",
+        "t": "Nueva Zelandia"
+    },
+    {
+        "o": "Norfolk Island",
+        "t": "Isla Norfolk"
+    },
+    {
+        "o": "Northern Mariana Islands",
+        "t": "Islas Marianas del Norte"
+    },
+    {
+        "o": "Norway",
+        "t": "Noruega"
+    },
+    {
+        "o": "Oman",
+        "t": "Omán"
+    },
+    {
+        "o": "Pakistan",
+        "t": "Pakistán"
+    },
+    {
+        "o": "Palestinian Territory",
+        "t": "Territorio Palestino"
+    },
+    {
+        "o": "Panama",
+        "t": "Panamá"
+    },
+    {
+        "o": "Papua New Guinea",
+        "t": "Papua Nueva Guinea"
+    },
+    {
+        "o": "Peru",
+        "t": "Perú"
+    },
+    {
+        "o": "Philippines",
+        "t": "Filipinas"
+    },
+    {
+        "o": "Poland",
+        "t": "Polonia"
+    },
+    {
+        "o": "Réunion",
+        "t": "Reunión"
+    },
+    {
+        "o": "Romania",
+        "t": "Rumania"
+    },
+    {
+        "o": "Russian Federation",
+        "t": "Federación de Rusia"
+    },
+    {
+        "o": "Saint Barthélemy",
+        "t": "San Bartolomé"
+    },
+    {
+        "o": "Saint Helena",
+        "t": "Santa Elena"
+    },
+    {
+        "o": "Saint Kitts and Nevis",
+        "t": "Saint Kitts y Nevis"
+    },
+    {
+        "o": "Saint Lucia",
+        "t": "Santa Lucía"
+    },
+    {
+        "o": "Saint Martin",
+        "t": "San Martín"
+    },
+    {
+        "o": "Saint Pierre and Miquelon",
+        "t": "San Pedro y Miquelón"
+    },
+    {
+        "o": "Saint Vincent and the Grenadines",
+        "t": "San Vicente y las Granadinas"
+    },
+    {
+        "o": "Sao Tome and Principe",
+        "t": "Santo Tomé y Príncipe"
+    },
+    {
+        "o": "Saudi Arabia",
+        "t": "Arabia Saudita"
+    },
+    {
+        "o": "Sierra Leone",
+        "t": "Sierra Leona"
+    },
+    {
+        "o": "Singapore",
+        "t": "Singapur"
+    },
+    {
+        "o": "Slovakia",
+        "t": "Eslovaquia"
+    },
+    {
+        "o": "Slovenia",
+        "t": "Eslovenia"
+    },
+    {
+        "o": "Solomon Islands",
+        "t": "Islas Salomón"
+    },
+    {
+        "o": "South Africa",
+        "t": "Sudáfrica"
+    },
+    {
+        "o": "South Georgia and the South Sandwich Islands",
+        "t": "Islas Georgias del Sur y Sandwich del Sur"
+    },
+    {
+        "o": "South Sudan",
+        "t": "Sudán del Sur"
+    },
+    {
+        "o": "Spain",
+        "t": "España"
+    },
+    {
+        "o": "Sudan",
+        "t": "Sudán"
+    },
+    {
+        "o": "Svalbard and Jan Mayen",
+        "t": "Svalbard y Jan Mayen"
+    },
+    {
+        "o": "Swaziland",
+        "t": "Swazilandia"
+    },
+    {
+        "o": "Sweden",
+        "t": "Suecia"
+    },
+    {
+        "o": "Switzerland",
+        "t": "Suiza"
+    },
+    {
+        "o": "Syrian Arab Republic",
+        "t": "República Árabe Siriai"
+    },
+    {
+        "o": "Taiwan",
+        "t": "Taiwán"
+    },
+    {
+        "o": "Tajikistan",
+        "t": "Tayikistán"
+    },
+    {
+        "o": "Thailand",
+        "t": "Tailandia"
+    },
+    {
+        "o": "Trinidad and Tobago",
+        "t": "Trinidad y Tabago"
+    },
+    {
+        "o": "Tunisia",
+        "t": "Túnez"
+    },
+    {
+        "o": "Turkey",
+        "t": "Turquía"
+    },
+    {
+        "o": "Turkmenistan",
+        "t": "Turkmenistán"
+    },
+    {
+        "o": "Turks and Caicos Islands",
+        "t": "Islas Turcas y Caicos"
+    },
+    {
+        "o": "Ukraine",
+        "t": "Ucrania"
+    },
+    {
+        "o": "United Arab Emirates",
+        "t": "Emiratos Árabes Unidos"
+    },
+    {
+        "o": "United Kingdom",
+        "t": "Reino Unido"
+    },
+    {
+        "o": "United States",
+        "t": "Estados Unidos"
+    },
+    {
+        "o": "Uzbekistan",
+        "t": "Uzbekistán"
+    },
+    {
+        "o": "Virgin Islands, British",
+        "t": "Islas Vírgenes Británicas"
+    },
+    {
+        "o": "Virgin Islands, U.S.",
+        "t": "Islas Vírgenes, EE.UU."
+    },
+    {
+        "o": "Wallis and Futuna",
+        "t": "Wallis y Futuna"
+    },
+    {
+        "o": "Western Sahara",
+        "t": "Sáhara Occidental"
+    },
+    {
+        "o": "Yes",
+        "t": "Sí"
+    },
+    {
+        "o": "The experiment will begin",
+        "t": "El experimento comenzará"
+    },
+    {
+        "o": "You are going to see a website on which you will have to click the Smartphone category and the button afterwards to buy the product.",
+        "t": "Verá un sitio web en el que tendrá que hacer clic en la categoría Teléfono inteligente y luego en el botón para comprar el producto."
+    },
+    {
+        "o": "Click on 'Start' to begin.",
+        "t": "Haga clic en 'Inicio' para comenzar."
+    },
+    {
+        "o": "Start",
+        "t": "Inicio"
+    },
+    {
+        "o": "Computers",
+        "t": "Computadoras"
+    },
+    {
+        "o": "Cameras",
+        "t": "Cámaras"
+    },
+    {
+        "o": "Smartphones",
+        "t": "Teléfonos inteligentes"
+    },
+    {
+        "o": "Headphones",
+        "t": "Auriculares"
+    },
+    {
+        "o": "Buy",
+        "t": "Comprar"
+    },
+    {
+        "o": "Continue",
+        "t": "Continuar"
+    },
+    {
+        "o": "Post-Questionnaire",
+        "t": "Post-Cuestionario"
+    },
+    {
+        "o": "The experiment is finished. Please answer the following questions with respect to the task and website you have seen.",
+        "t": "El experimento ha terminado. Responda las siguientes preguntas con respecto a la tarea y el sitio web que ha visto."
+    },
+    {
+        "o": "Choose the most number the most suitable for your experience with the website.",
+        "t": "Elija el número más adecuado para su experiencia con el sitio web."
+    },
+    {
+        "o": "1 : Strongly disagree",
+        "t": "1: Totalmente en desacuerdo"
+    },
+    {
+        "o": "7 : Strongly agree",
+        "t": "7 : Totalmente de acuerdo"
+    },
+    {
+        "o": "1.) It was easy to read the text on the website with the used font / background color combination.",
+        "t": "1.) Fue fácil leer el texto en el sitio web con la combinación de fuente/color de fondo utilizada."
+    },
+    {
+        "o": "2.) The color scheme of this website was appealing.",
+        "t": "2.) El esquema de colores de este sitio web fue atractivo."
+    },
+    {
+        "o": "3.) The use of the applied colors enhanced navigation.",
+        "t": "3.) El uso de los colores aplicados mejora la navegación."
+    },
+    {
+        "o": "Thank you for taking the time to participate!",
+        "t": "¡Gracias por tomarse el tiempo para participar!"
+    },
+    {
+        "o": "Please share the link to this experiment with anyone you know.",
+        "t": "Por favor, comparta el enlace a este experimento con cualquier persona que conozca."
+    },
+    {
+        "o": "Authors: Laura Kotalczyk, Léonie Berton",
+        "t": "Autores: Laura Kotalczyk, Léonie Berton"
     }
 ]

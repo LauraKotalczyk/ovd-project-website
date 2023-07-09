@@ -81,7 +81,7 @@
             </tr>
         </table>
     </div>
-    <form>
+    <form id="postQuest">
         <br>
         <fieldset>
             <div class="translate">
@@ -145,12 +145,38 @@
             </script>
             <div class="translate">
                 <button id="continue2" type="button"
-                    onclick='RegisterData2();finishTracking("thanks.html");finishSubsceneTracking();finishExperiment();'>Continue</button>
+                    onclick='verif_formulaire2();RegisterData2();finishTracking("thanks.html");finishSubsceneTracking();finishExperiment();'>Continue</button>
             </div>
         </fieldset>
     </form>
 
     <script src="js/localization.js"></script>
+    <script>
+        function verif_formulaire2(){
+    
+        var msg = ""; 
+     
+     if(postQuest.easyRead.value == "")  {
+     msg += "please select a value for question 1\n";
+       }
+    
+    
+    if(postQuest.appealing.value == "" )  {
+     msg += "please select a value for question 2 \n";
+       }
+
+    if(postQuest.easyNav.value == "" )  {
+     msg += "please select a value for question 3 \n";
+       }
+
+      if (msg != "" )
+    {
+    alert(msg);
+    return false;
+    }
+     
+    }
+</script>
 
 </body>
 

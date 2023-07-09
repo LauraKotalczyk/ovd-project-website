@@ -498,15 +498,16 @@
                 <legend>7.) Please select the device you are doing the experiment on</legend></div>
                 <div class="q9">
                     <!-- Input Type Radio Button -->
+                    <br>
+                
                     <input type="radio" id="smartphone" name="device" value="smartphone" required>
-                    <label for="yes">Smartphone 📱</label>
+                    <label for="yes">Smartphone 📱</label> <br>
                     <input type="radio" id="computer" name="device" value="computer" required>
-                    <label for="yes">Computer 💻</label>
+                    <label for="yes">Computer 💻</label><br>
                     <input type="radio" id="tablet" name="device" value="tablet" required>
-                    <label for="no">Tablet 📱</label>  
-                </div>
+                    <label for="no">Tablet 📱</label> 
                 <br> 
-
+                </div>
                 
                 <script>  
                     function RegisterData() { 
@@ -542,14 +543,58 @@
                  </script>
 
                 <div class="translate">
-                <button id="preq_saveButton" type="button" onclick='RegisterData();finishTracking("explanation.html");finishSubsceneTracking();'>Continue</button>
+                <button id="preq_saveButton" type="button" onclick='verif_formulaire();RegisterData();finishTracking("explanation.html");finishSubsceneTracking();'>Continue</button>
                 </div>
-                
+                <!---->
                 
         </fieldset>
 
     </form>
     <script src="js/localization.js"></script>
+
+ 
+ <script>
+    function verif_formulaire(){
+
+    var msg = ""; 
+ 
+ if(preQuestionnaire.gender.value == "")  {
+ msg += "Please enter a genre \n";
+   }
+
+if(preQuestionnaire.birthyear.value == 0 )  {
+ msg += "Please enter a date of birth \n";
+   }
+
+if(preQuestionnaire.country.value == "-" )  {
+ msg += "Please enter a country \n";
+   }
+
+if(preQuestionnaire.colorblind.value == "" )  {
+ msg += "Please enter if you are color-blind \n";
+   }
+
+if(preQuestionnaire.favcolor.value == "-" )  {
+ msg += "Please enter your preferred color \n";
+   }
+ 
+if(preQuestionnaire.numberOfPurchasesAvg.value == 0 )  {
+ msg += "Please enter your average order per month \n";
+   }
+
+if(preQuestionnaire.device.value == "" )  {
+ msg += "Please enter the device you are using \n";
+   }
+
+  if (msg != "" )
+{
+alert(msg);
+return false;
+}
+ 
+}
+ 
+</script>
 
 </body>
 </html>

@@ -16,8 +16,8 @@
         "t": "L'expérience vous prendra moins de 5 minutes."
     },
     {
-        "o": "! It is recommended to use Google Chrome for this experiment.",
-        "t": "! Il est recommandé d'utiliser Google Chrome pour cette expérience."
+        "o": "It is recommended to use Google Chrome for this experiment.",
+        "t": "Il est recommandé d'utiliser Google Chrome pour cette expérience."
     },
     {
         "o": "You can change the language of the experiment here.",

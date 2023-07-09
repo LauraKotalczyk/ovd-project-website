@@ -1,0 +1,222 @@
+[
+    {
+        "o": "Dear participant, the data gathered from the following experiment will be used for analytical purposes only.",
+        "t": "Cher participant, les données recueillies à partir de l'expérience suivante seront utilisées à des fins analytiques uniquement."
+    },
+    {
+        "o": "The collected data will be deleted afterwards.",
+        "t": "Les données collectées seront ensuite supprimées."
+    },
+    {
+        "o": "Thank you for taking the time to participate in our experiment.",
+        "t": "Merci d'avoir pris le temps de participer à notre expérience."
+    },
+    {
+        "o": "The experiment will take you less than 5 minutes.",
+        "t": "L'expérience vous prendra moins de 5 minutes."
+    },
+    {
+        "o": "! It is recommended to use Google Chrome for this experiment.",
+        "t": "! Il est recommandé d'utiliser Google Chrome pour cette expérience."
+    },
+    {
+        "o": "You can change the language of the experiment here.",
+        "t": "Vous pouvez changer la langue de l'expérience ici"
+    },
+    {
+        "o": "Start the experiment",
+        "t": "Démarrer l'expérience"
+    },
+    {
+        "o": "Pre-Questionnaire",
+        "t": "Pré-questionnaire"
+    },
+    {
+        "o": "Dear participant,",
+        "t": "Cher participant,"
+    },
+    {
+        "o": "the following questionnaire will be used for analytical purposes only.",
+        "t": "le questionnaire suivant ne sera utilisé qu'à des fins d'analyse."
+    },
+    {
+        "o": "Please answer the questions truthfully.",
+        "t": "Veuillez répondre honnêtement aux questions."
+    },
+    {
+        "o": "The questionnaire will take you less than a minute.",
+        "t": "Le questionnaire vous prendra moins d'une minute."
+    },
+    {
+        "o": "1.) Please select your gender",
+        "t": "1.) Veuillez sélectionner votre sexe"
+    },
+    {
+        "o": "2.) Please select your year of birth",
+        "t": "2.) Veuillez sélectionner votre année de naissance"
+    },
+    {
+        "o": "3.) Please select your country",
+        "t": "3.) Veuillez sélectionner votre pays"
+    },
+    {
+        "o": "4.) Are you colorblind?",
+        "t": "4.) Êtes-vous daltonien?"
+    },
+    {
+        "o": "5.) Please select your favorite color",
+        "t": "5.) Veuillez sélectionner votre couleur préférée"
+    },
+    {
+        "o": "6.) Please select your average number of online purchases per month",
+        "t": "6.) Veuillez sélectionner votre nombre moyen d'achats en ligne par mois"
+    },
+    {
+        "o": "7.) Please select the device you are doing the experiment on",
+        "t": "7.) Veuillez sélectionner l'appareil sur lequel vous effectuez l'expérience"
+    },
+    {
+        "o": "Continue",
+        "t": "Continuer"
+    },
+    {
+        "o": "Red 🟥",
+        "t": "Rouge 🟥"
+    },
+    {
+        "o": "Blue 🟦",
+        "t": "Bleu 🟦"
+    },
+    {
+        "o": "Yellow 🟨",
+        "t": "Jaune 🟨"
+    },
+    {
+        "o": "Orange 🟧",
+        "t": "Orange 🟧"
+    },
+    {
+        "o": "Green 🟩",
+        "t": "Vert 🟩"
+    },
+    {
+        "o": "Purple 🟪",
+        "t": "Violet 🟪"
+    },
+    {
+        "o": "Other",
+        "t": "Autre"
+    },
+    {
+        "o": "Smartphone 📱",
+        "t": "Smartphone 📱"
+    },
+    {
+        "o": "Computer 💻",
+        "t": "Ordinateur 💻"
+    },
+    {
+        "o": "Tablet 📱",
+        "t": "Tablette 📱"
+    },
+    {
+        "o": "Male",
+        "t": "Masculin"
+    },
+    {
+        "o": "Female",
+        "t": "Féminin"
+    },
+    {
+        "o": "Other",
+        "t": "Autre"
+    },
+    {
+        "o": "Yes",
+        "t": "Oui"
+    },
+    {
+        "o": "The experiment will begin",
+        "t": "L'expérience va commencer"
+    },
+    {
+        "o": "You are going to see a website on which you will have to click the Smartphone category and the button afterwards to buy the product.",
+        "t": "Vous allez voir un site internet sur lequel vous allez devoir cliquer sur la catégorie Smartphone et ensuite sur le bouton pour acheter le produit."
+    },
+    {
+        "o": "Click on 'Start' to begin.",
+        "t": "Cliquez sur 'Démarrer' pour commencer."
+    },
+    {
+        "o": "Start",
+        "t": "Commencer"
+    },
+    {
+        "o": "Computers",
+        "t": "Ordinateurss"
+    },
+    {
+        "o": "Cameras",
+        "t": "Appareils photo"
+    },
+    {
+        "o": "Smartphones",
+        "t": "Smartphones"
+    },
+    {
+        "o": "Headphones",
+        "t": "Écouteur"
+    },
+    {
+        "o": "Buy",
+        "t": "Acheter"
+    },
+    {
+        "o": "Continue",
+        "t": "Continuer"
+    },
+    {
+        "o": "Post-Questionnaire",
+        "t": "Post-questionnaire"
+    },
+    {
+        "o": "The experiment is finished. Please answer the following questions with respect to the task and website you have seen.",
+        "t": "L'expérience est terminée. Veuillez répondre aux questions suivantes en ce qui concerne la tâche et le site Web que vous avez vus."
+    },
+    {
+        "o": "Choose the most number the most suitable for your experience with the website.",
+        "t": "Choisissez le nombre le plus adapté à votre expérience avec le site Web."
+    },
+    {
+        "o": "1 : Strongly disagree",
+        "t": "1 : Pas du tout d'accord"
+    },
+    {
+        "o": "7 : Strongly agree",
+        "t": "7 : Tout à fait d'accord"
+    },
+    {
+        "o": "1.) It was easy to read the text on the website with the used font / background color combination.",
+        "t": "1.) Il était facile de lire le texte sur le site Web avec la combinaison police/couleur de fond utilisée."
+    },
+    {
+        "o": "2.) The color scheme of this website was appealing.",
+        "t": "2.) La palette de couleurs de ce site Web était attrayante."
+    },
+    {
+        "o": "3.) The use of the applied colors enhanced navigation.",
+        "t": "3.) L'utilisation des couleurs appliquées a amélioré la navigation."
+    },
+    {
+        "o": "Thank you for taking the time to participate!",
+        "t": "Merci d'avoir pris le temps de participer!"
+    },
+    {
+        "o": "Please share the link to this experiment with anyone you know.",
+        "t": "S'il vous plaît partager le lien vers cette expérience avec quelqu'un que vous connaissez."
+    },
+    {
+        "o": "Authors: Laura Kotalczyk, Léonie Berton",
+        "t": "Auteurs : Laura Kotalczyk, Léonie Berton"
+    }
+]

@@ -13,6 +13,10 @@ cloudLocalization({
       {
         code: "es",
         displayName: "Spanish"
+      },
+      {
+        code: "fr",
+        displayName: "Français"
       }
     ]
   });

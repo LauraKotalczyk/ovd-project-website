@@ -1,23 +1,23 @@
 [
     {
         "o": "Dear participant, the data gathered from the following experiment will be used for analytical purposes only.",
-        "t": "Estimado participante, los datos recopilados del siguiente experimento se utilizarán solo con fines analíticos."
+        "t": "Estimado participante, los datos recopilados del siguiente experimento se utilizarán solo con fines analíticos, y se eliminarán posteriormente."
     },
     {
         "o": "The collected data will be deleted afterwards.",
-        "t": "Los datos recopilados se eliminarán posteriormente."
+        "t": ""
     },
     {
         "o": "Thank you for taking the time to participate in our experiment.",
-        "t": "Gracias por tomarse el tiempo para participar en nuestro experimento."
+        "t": "Gracias de antemano por participar en nuestro experimento."
     },
     {
         "o": "The experiment will take you less than 5 minutes.",
-        "t": "El experimento te llevará menos de 5 minutos."
+        "t": "EEl experimento requiere menos de 5 minutos."
     },
     {
         "o": "It is recommended to use Google Chrome for this experiment.",
-        "t": "Se recomienda utilizar Google Chrome para este experimento."
+        "t": "Se recomienda utilizar Google Chrome."
     },
     {
         "o": "You can change the language of the experiment here.",

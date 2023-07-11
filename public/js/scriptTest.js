@@ -49,7 +49,7 @@
 		var elements = [];
 		var emittingData = false;
 		
-	var idExperiment = 18;
+	var idExperiment = 22;
 	var urlBase='https://156.35.82.106'
 		
 		var url = urlBase + '/TrackerServer/restws/track';
@@ -765,4 +765,7 @@
 			}
 		}
 	
-function registergender(value) {postStringDD(92, value);}function registeryearOfBirth(value) {postNumberDD(93, value);}function registercountry(value) {postStringDD(94, value);}function registercolorblind(value) {postStringDD(95, value);}function registerfavoriteColor(value) {postStringDD(96, value);}function registeravgNumberOPurchases(value) {postNumberDD(97, value);}function registerdevice(value) {postStringDD(98, value);}function registeruserID(value) {postStringDD(99, value);}function registereasyRead(value) {postNumberDD(100, value);}function registerappealingColor(value) {postNumberDD(101, value);}function registereasyNav(value) {postNumberDD(102, value);}
+		function registerfavoriteColor(value) {postStringDD(184, value);}function registeryearOfBirth(value) {postNumberDD(185, value);}function registercountry(value) {postStringDD(186, value);}function registereasyNav(value) {postNumberDD(187, value);}function registercolorblind(value) {postStringDD(188, value);}function registerdevice(value) {postStringDD(189, value);}function registeruserID(value) {postStringDD(190, value);}function registereasyRead(value) {postNumberDD(191, value);}function registeravgNumberOPurchases(value) {postNumberDD(192, value);}function registerappealingColor(value) {postNumberDD(193, value);}function registergender(value) {postStringDD(194, value);}
+
+
+		// function registergender(value) {postStringDD(92, value);}function registeryearOfBirth(value) {postNumberDD(93, value);}function registercountry(value) {postStringDD(94, value);}function registercolorblind(value) {postStringDD(95, value);}function registerfavoriteColor(value) {postStringDD(96, value);}function registeravgNumberOPurchases(value) {postNumberDD(97, value);}function registerdevice(value) {postStringDD(98, value);}function registeruserID(value) {postStringDD(99, value);}function registereasyRead(value) {postNumberDD(100, value);}function registerappealingColor(value) {postNumberDD(101, value);}function registereasyNav(value) {postNumberDD(102, value);}

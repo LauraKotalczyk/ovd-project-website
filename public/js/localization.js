@@ -12,7 +12,7 @@ cloudLocalization({
       },
       {
         code: "es",
-        displayName: "Spanish"
+        displayName: "Español"
       },
       {
         code: "fr",

@@ -9,6 +9,7 @@ dataset = pd.read_csv("Test_Data.csv", sep=",")
 ##print (dataset.head())
 
 time = dataset['T.T escena (ms)']
+print("Number of answers :",len(time))
 
 print("Variable Time : ")
 ## Mean
@@ -34,3 +35,9 @@ print ("Variance : ", round(variance, 2))
 ## Standard deviation
 Stdeviation = np.std(time)
 print ("Standard deviation : ", round(Stdeviation, 2))
+
+## Plot
+plt.hist(x=time, bins='auto', color='#0504aa')
+plt.xlabel('Time')
+plt.ylabel('Number of people')
+plt.title('Experience time per person')

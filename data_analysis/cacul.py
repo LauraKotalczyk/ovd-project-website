@@ -8,33 +8,41 @@ dataset = pd.read_csv("data_analysis/Test_Data.csv", sep=",")
 ###### step 1: descriptive statistics  #####
 ##print (dataset.head())
 
+print("Summary Statistics for the time needed (in ms): ")
+
+## N = Number of Participants
 time = dataset['T.T escena (ms)']
 print("Number of answers :",len(time))
 
-print("Variable Time : ")
+
 ## Mean
 mean = np.mean(time)
-print ("Mean : ", round(mean, 2))
+print ("%s%d%s" % ("Mean : ", round(mean, 2), " ms"))
 
 ## Median
 median = np.median(time)
-print ("Median : ", round(median, 2))
+print ("%s%d%s" % ("Median : ", round(median, 2), " ms"))
 
 ## Quartille
 
 Q1 = round(np.percentile(time, 25))
-print("Quartile Q1 : ", Q1)
+print ("%s%d%s" % ("Q1 Quartile : ", Q1, " ms"))
+
 
 Q3 = round(np.percentile(time, 75))
-print("Quartile Q3 : ", Q3)
+print ("%s%d%s" % ("Q3 Quartile : ", Q3, " ms"))
+
 
 ## Variance
 variance = np.var(time)
 print ("Variance : ", round(variance, 2))
+print ("%s%d%s" % ("Variance : ", round(variance, 2), " ms"))
+
 
 ## Standard deviation
-Stdeviation = np.std(time)
-print ("Standard deviation : ", round(Stdeviation, 2))
+stdDeviation = np.std(time)
+print ("%s%d%s" % ("Standard deviation : ", round(stdDeviation, 2), " ms"))
+
 
 ## Plot
 plt.hist(x=time, bins='auto', color='#0504aa')

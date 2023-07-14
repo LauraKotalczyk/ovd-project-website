@@ -41,3 +41,32 @@ plt.hist(x=time, bins='auto', color='#0504aa')
 plt.xlabel('Time')
 plt.ylabel('Number of people')
 plt.title('Experience time per person')
+plt.show()
+
+print("----- BLUE -------")
+blue = dataset[(dataset.userID == 2)]
+print("Number of answers :",len(blue))
+
+blue['age'] = 2023-blue['yearOfBirth']
+mean = np.mean(blue['age'])
+print ("Mean of age : ", round(mean, 2))
+
+nbmen=(blue['gender']=="male").sum()
+print("Number of men :",nbmen )
+nbwom=(blue['gender']=="female").sum()
+print("Number of women :",nbwom )
+
+print(blue.groupby(['country']).size())
+
+print("----- YELLOW -------")
+yellow = dataset[(dataset.userID == 1)]
+print("Number of answers :",len(yellow))
+
+yellow['age'] = 2023-yellow['yearOfBirth']
+mean = np.mean(yellow['age'])
+print ("Mean of age : ", round(mean, 2))
+
+nbmen=(yellow['gender']=="male").sum()
+print("Number of men :",nbmen )
+nbwom=(yellow['gender']=="female").sum()
+print("Number of women :",nbwom )

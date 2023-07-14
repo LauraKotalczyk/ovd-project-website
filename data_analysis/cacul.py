@@ -41,3 +41,7 @@ plt.hist(x=time, bins='auto', color='#0504aa')
 plt.xlabel('Time')
 plt.ylabel('Number of people')
 plt.title('Experience time per person')
+
+plt.savefig("fig.pdf")
+
+plt.show()

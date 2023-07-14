@@ -35,7 +35,6 @@ print ("%s%d%s" % ("Q3 Quartile : ", Q3, " ms"))
 
 ## Variance
 variance = np.var(time)
-print ("Variance : ", round(variance, 2))
 print ("%s%d%s" % ("Variance : ", round(variance, 2), " ms"))
 
 

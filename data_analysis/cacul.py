@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from scipy import stats as st
- 
-dataset = pd.read_csv("data_analysis/Test_Data.csv", sep=",")
+
+dataset = pd.read_csv("Test_Data.csv", sep=",")
 
 ###### step 1: descriptive statistics  #####
 ##print (dataset.head())
@@ -52,3 +52,74 @@ plt.title('Experience time per person')
 plt.savefig("fig.pdf")
 
 plt.show()
+
+## Statistic by color group 
+print("----- BLUE -------")
+blue = dataset[(dataset.userID == 2)]
+print("Number of answers :",len(blue))
+
+blue['age'] = 2023-blue['yearOfBirth']
+mean = np.mean(blue['age'])
+print ("Mean of age : ", round(mean, 2))
+
+nbmen=(blue['gender']=="male").sum()
+print("Number of men :",nbmen )
+nbwom=(blue['gender']=="female").sum()
+print("Number of women :",nbwom )
+
+print(blue.groupby(['country'])['country'].count())
+
+print(blue.groupby(['device'])['device'].count())
+
+colorblind=(blue['colorblind']=="yes").sum()
+print("Number of colorblind : ",colorblind )
+
+mean = np.mean(blue['T.T escena (ms)'])
+print ("Mean of time : ", round(mean, 2))
+
+mean = np.mean(blue['Nº clicks erróneos'])
+print ("Mean of error click: ", round(mean, 2))
+
+print("----- YELLOW -------")
+yellow = dataset[(dataset.userID == 1)]
+print("Number of answers :",len(yellow))
+
+yellow['age'] = 2023-yellow['yearOfBirth']
+mean = np.mean(yellow['age'])
+print ("Mean of age : ", round(mean, 2))
+
+nbmen=(yellow['gender']=="male").sum()
+print("Number of men :",nbmen )
+nbwom=(yellow['gender']=="female").sum()
+print("Number of women :",nbwom )
+
+print(yellow.groupby(['country'])['country'].count())
+
+print(yellow.groupby(['device'])['device'].count())
+
+colorblind=(yellow['colorblind']=="yes").sum()
+print("Number of colorblind : ",colorblind )
+
+mean = np.mean(yellow['T.T escena (ms)'])
+print ("Mean of time : ", round(mean, 2))
+
+mean = np.mean(yellow['Nº clicks erróneos'])
+print ("Mean of error click: ", round(mean, 2))
+
+## T Test
+print("----- T Test ------")
+print("----- Time ------")
+X1 = blue['T.T escena (ms)']
+X2 = yellow['T.T escena (ms)']
+
+y = st.ttest_ind(X1,X2) 
+print(" P value :",y[1])
+print( "if p value <  0.05 -> significative difference")
+
+print("----- Eror click ------")
+X1 = blue['Nº clicks erróneos']
+X2 = yellow['Nº clicks erróneos']
+
+y = st.ttest_ind(X1,X2) 
+print(" P value :",y[1])
+print( "if p value <  0.05 -> significative difference")

@@ -2,17 +2,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from scipy import stats as st
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
 
 dataset300 = pd.read_csv("Scene_300.csv", sep=",")
 dataset301 = pd.read_csv("Scene_301.csv", sep=",")
 
-
-
+## Merge dataset
 df_Final = pd.merge(dataset300, dataset301, on='User')
 print(df_Final.head())
 df_Final=df_Final[['User','favoriteColor_x','yearOfBirth_x','country_x','easyNav_x','colorblind_x','device_x','userID_x','easyRead_x','avgNumberOPurchases_x','appealingColor_x','gender_x','T. scene time (ms)_x','Nº error cliks_x','T. scene time (ms)_y','Nº error cliks_y']]
+## Cacul new columns
 df_Final["TimeTotal"]=df_Final['T. scene time (ms)_y']+df_Final['T. scene time (ms)_x']
 df_Final["ClickTotal"]=df_Final['Nº error cliks_y']+df_Final['Nº error cliks_x']
+df_Final['colorComb'] = np.where(df_Final['userID_x']== 2,'blue', 'yellow')
+
 ###### step 1: descriptive statistics  #####
 ##print (dataset.head())
 
@@ -55,7 +59,7 @@ print ("Mean of age : ", round(mean, 2))
 def label_function(val):
     return f'\n{val:.0f}%'
 
-fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, figsize=(14, 7))
+fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, figsize=(16, 8))
 
 df_Final.groupby('country_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
                                   ax=ax1)
@@ -132,10 +136,9 @@ plt.show()
 
 ## Statistic by color group 
 print("----- BLUE -------")
-blue = df_Final[(df_Final.userID_x == 2)]
+blue = df_Final[(df_Final.colorComb == 'blue')]
 print("Number of answers :",len(blue))
 
-blue['age'] = 2023-blue['yearOfBirth_x']
 mean = np.mean(blue['age'])
 print ("Mean of age : ", round(mean, 2))
 
@@ -167,10 +170,9 @@ mean = np.mean(blue["appealingColor_x"])
 print ("Mean of appealing color: ", round(mean, 2))
 
 print("----- YELLOW -------")
-yellow = df_Final[(df_Final.userID_x == 1)]
+yellow = df_Final[(df_Final.colorComb == 'yellow')]
 print("Number of answers :",len(yellow))
 
-yellow['age'] = 2023-yellow['yearOfBirth_x']
 mean = np.mean(yellow['age'])
 print ("Mean of age : ", round(mean, 2))
 
@@ -244,8 +246,35 @@ y = st.ttest_ind(X1,X2)
 print(" P value :",y[1])
 print( "if p value <  0.05 -> significative difference")
 
+## anova test
+print("----- ANOVA TEST ------")
+
+print("--- Color Combinaison / Gender")
+model = ols('TimeTotal ~ C(colorComb) + C(gender_x) + C(colorComb):C(gender_x)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
+
+print("--- Color Combinaison / Age")
+model = ols('TimeTotal ~ C(colorComb) + C(age) + C(colorComb):C(age)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
+
+print("--- Color Combinaison / Country")
+model = ols('TimeTotal ~ C(colorComb) + C(country_x) + C(colorComb):C(country_x)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
+
+print("--- Color Combinaison / Device")
+model = ols('TimeTotal ~ C(colorComb) + C(device_x) + C(colorComb):C(device_x)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
 
 
 
 
-# anova test
+
+#plot

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy import stats as st
 
-dataset = pd.read_csv("data_analysis/Final_Data.csv", sep=",")
+dataset = pd.read_csv("Final_Data.csv", sep=",")
 
 ###### step 1: descriptive statistics  #####
 ##print (dataset.head())
@@ -74,10 +74,10 @@ print(blue.groupby(['device'])['device'].count())
 colorblind=(blue['colorblind']=="yes").sum()
 print("Number of colorblind : ",colorblind )
 
-mean = np.mean(blue['T.T escena (ms)'])
+mean = np.mean(blue['T. scene time (ms)'])
 print ("Mean of time : ", round(mean, 2))
 
-mean = np.mean(blue['Nº clicks erróneos'])
+mean = np.mean(blue['Nº error cliks'])
 print ("Mean of error click: ", round(mean, 2))
 
 print("----- YELLOW -------")
@@ -100,25 +100,25 @@ print(yellow.groupby(['device'])['device'].count())
 colorblind=(yellow['colorblind']=="yes").sum()
 print("Number of colorblind : ",colorblind )
 
-mean = np.mean(yellow['T.T escena (ms)'])
+mean = np.mean(yellow['T. scene time (ms)'])
 print ("Mean of time : ", round(mean, 2))
 
-mean = np.mean(yellow['Nº clicks erróneos'])
+mean = np.mean(yellow['Nº error cliks'])
 print ("Mean of error click: ", round(mean, 2))
 
 ## T Test
 print("----- T Test ------")
 print("----- Time ------")
-X1 = blue['T.T escena (ms)']
-X2 = yellow['T.T escena (ms)']
+X1 = blue['T. scene time (ms)']
+X2 = yellow['T. scene time (ms)']
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])
 print( "if p value <  0.05 -> significative difference")
 
 print("----- Eror click ------")
-X1 = blue['Nº clicks erróneos']
-X2 = yellow['Nº clicks erróneos']
+X1 = blue['Nº error cliks']
+X2 = yellow['Nº error cliks']
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])

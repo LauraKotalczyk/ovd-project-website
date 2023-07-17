@@ -273,6 +273,24 @@ anova_table = sm.stats.anova_lm(model, typ=2)
 print("P-value: ", anova_table.iloc[2,3])
 print( "if p value <  0.05 -> significative difference")
 
+print("--- Color Combinaison / Easy Navigation")
+model = ols('TimeTotal ~ C(colorComb) + C(easyNav_x) + C(colorComb):C(easyNav_x)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
+
+print("--- Color Combinaison / Easy Read")
+model = ols('TimeTotal ~ C(colorComb) + C(easyRead_x) + C(colorComb):C(easyRead_x)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
+
+print("--- Color Combinaison / Appealing Color")
+model = ols('TimeTotal ~ C(colorComb) + C(appealingColor_x) + C(colorComb):C(appealingColor_x)', data=df_Final).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print("P-value: ", anova_table.iloc[2,3])
+print( "if p value <  0.05 -> significative difference")
+
 
 
 

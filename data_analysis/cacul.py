@@ -122,8 +122,6 @@ print ("%s%d%s" % ("Variance : ", round(variance, 2), " ms"))
 stdDeviation = np.std(time)
 print ("%s%d%s" % ("Standard deviation : ", round(stdDeviation, 2), " ms"))
 
-
-
 ## Plot
 plt.hist(x=time, bins='auto', color='#0504aa')
 plt.xlabel('Time')
@@ -133,6 +131,7 @@ plt.title('Experience time per person')
 plt.savefig("fig.pdf")
 
 plt.show()
+
 
 ## Statistic by color group 
 print("----- BLUE -------")
@@ -202,6 +201,25 @@ print ("Mean of easy read ", round(mean, 2))
 
 mean = np.mean(yellow["appealingColor_x"])
 print ("Mean of appealing color: ", round(mean, 2))
+
+## plot
+
+fig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)
+
+axs[0].hist(blue["TimeTotal"], bins='auto', color='#0504aa')
+axs[1].hist(yellow["TimeTotal"], bins='auto', color='yellow')
+
+axs[0].set_title('Blue combinaison', size=12)
+axs[0].set_ylabel('Number of people', size=10)
+axs[0].set_xlabel('Time (ms)', size=10)
+
+axs[1].set_title('Yellow combinaison', size=12)
+axs[1].set_ylabel('Number of people', size=10)
+axs[1].set_xlabel('Time (ms)', size=10)
+
+
+plt.show()
+
 
 ## T Test
 print("----- T Test ------")
@@ -294,5 +312,3 @@ print( "if p value <  0.05 -> significative difference")
 
 
 
-
-#plot

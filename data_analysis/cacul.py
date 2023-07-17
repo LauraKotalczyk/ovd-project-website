@@ -51,7 +51,24 @@ df_Final['age'] = 2023-df_Final['yearOfBirth_x']
 mean = np.mean(df_Final['age'])
 print ("Mean of age : ", round(mean, 2))
 
-##gender, device country
+## Plot
+def label_function(val):
+    return f'{val / 100 * len(df_Final):.0f}\n{val:.0f}%'
+
+fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, figsize=(16, 8))
+
+df_Final.groupby('country_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
+                                  ax=ax1)
+df_Final.groupby('gender_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
+                                  ax=ax2)
+df_Final.groupby('device_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
+                                  ax=ax3)
+ax1.set_ylabel('Country', size=22)
+ax2.set_ylabel('Gender', size=22)
+ax3.set_ylabel('Device', size=22)
+plt.tight_layout()
+plt.show()
+
 
 mean = np.mean(df_Final["ClickTotal"])
 print ("Mean of error click: ", round(mean, 2))
@@ -229,6 +246,6 @@ print( "if p value <  0.05 -> significative difference")
 
 
 
-# total mean of age, number of women, mean of 3 questions
-# diagramme gender, device, country
+
+
 # anova test

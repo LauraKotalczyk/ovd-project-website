@@ -61,15 +61,15 @@ def label_function(val):
 
 fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, figsize=(16, 8))
 
-df_Final.groupby('country_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
+df_Final.groupby('country_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 13},
                                   ax=ax1)
-df_Final.groupby('gender_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
+df_Final.groupby('gender_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 13},
                                   ax=ax2)
-df_Final.groupby('device_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
+df_Final.groupby('device_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 13},
                                   ax=ax3)
-ax1.set_ylabel('Country', size=22)
-ax2.set_ylabel('Gender', size=22)
-ax3.set_ylabel('Device', size=22)
+ax1.set_xlabel('Country', size=19)
+ax2.set_xlabel('Gender', size=19)
+ax3.set_xlabel('Device', size=19)
 plt.tight_layout()
 plt.show()
 

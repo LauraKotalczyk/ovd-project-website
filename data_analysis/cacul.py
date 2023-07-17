@@ -43,10 +43,35 @@ print("upper limit for time",upperLimit)
 df_Final = df_Final.loc[df_Final["TimeTotal"] < upperLimit]
 
 print("Number of answers after cleanning : ",len(df_Final))
+## Global statistic
+
+print("-----Global desciption-----")
+
+df_Final['age'] = 2023-df_Final['yearOfBirth_x']
+mean = np.mean(df_Final['age'])
+print ("Mean of age : ", round(mean, 2))
+
+##gender, device country
+
+mean = np.mean(df_Final["ClickTotal"])
+print ("Mean of error click: ", round(mean, 2))
+
+mean = np.mean(df_Final['easyNav_x'])
+print ("Mean of easy navigation : ", round(mean, 2))
+
+mean = np.mean(df_Final["easyRead_x"])
+print ("Mean of easy read ", round(mean, 2))
+
+mean = np.mean(df_Final["appealingColor_x"])
+print ("Mean of appealing color: ", round(mean, 2))
+
+
+
+## statistic about time 
+print("-- Statistique about Time --")
 time = df_Final["TimeTotal"]
 
 ## Mean
-
 mean = np.mean(time)
 print ("%s%d%s" % ("Mean : ", round(mean, 2), " ms"))
 
@@ -115,6 +140,15 @@ print ("Mean of time : ", round(mean, 2))
 mean = np.mean(blue["ClickTotal"])
 print ("Mean of error click: ", round(mean, 2))
 
+mean = np.mean(blue['easyNav_x'])
+print ("Mean of easy navigation : ", round(mean, 2))
+
+mean = np.mean(blue["easyRead_x"])
+print ("Mean of easy read ", round(mean, 2))
+
+mean = np.mean(blue["appealingColor_x"])
+print ("Mean of appealing color: ", round(mean, 2))
+
 print("----- YELLOW -------")
 yellow = df_Final[(df_Final.userID_x == 1)]
 print("Number of answers :",len(yellow))
@@ -140,6 +174,15 @@ print ("Mean of time : ", round(mean, 2))
 
 mean = np.mean(yellow["ClickTotal"])
 print ("Mean of error click: ", round(mean, 2))
+
+mean = np.mean(yellow['easyNav_x'])
+print ("Mean of easy navigation : ", round(mean, 2))
+
+mean = np.mean(yellow["easyRead_x"])
+print ("Mean of easy read ", round(mean, 2))
+
+mean = np.mean(yellow["appealingColor_x"])
+print ("Mean of appealing color: ", round(mean, 2))
 
 ## T Test
 print("----- T Test ------")
@@ -184,8 +227,8 @@ y = st.ttest_ind(X1,X2)
 print(" P value :",y[1])
 print( "if p value <  0.05 -> significative difference")
 
-## Plot
 
-colors = ['red', 'green']
-alphas = [1.0, 0.7]
-plt.hist([blue, yellow ], bins = 'auto', label=['Data 1', 'Data 2'], color = colors, alpha = alphas)
+
+# total mean of age, number of women, mean of 3 questions
+# diagramme gender, device, country
+# anova test

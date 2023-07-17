@@ -53,9 +53,9 @@ print ("Mean of age : ", round(mean, 2))
 
 ## Plot
 def label_function(val):
-    return f'{val / 100 * len(df_Final):.0f}\n{val:.0f}%'
-
-fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, figsize=(16, 8))
+    return f'{val / 100 * len(df_Final):.0f}'
+##\n{val:.0f}%'
+fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, figsize=(14, 7))
 
 df_Final.groupby('country_x').size().plot(kind='pie', autopct=label_function, textprops={'fontsize': 20},
                                   ax=ax1)

@@ -96,9 +96,6 @@ time = df_Final["TimeTotal"]
 mean = np.mean(time)
 print ("%s%d%s" % ("Mean : ", round(mean, 2), " ms"))
 
-mean = np.mean(df_Final["TimeTotal"])
-print ("%s%d%s" % ("Mean : ", round(mean, 2), " ms"))
-
 ## Median
 median = np.median(time)
 print ("%s%d%s" % ("Median : ", round(median, 2), " ms"))
@@ -132,6 +129,26 @@ plt.savefig("fig.pdf")
 
 plt.show()
 
+## Statistic about error click
+print("-- Error Click --")
+mean = np.mean(df_Final["ClickTotal"])
+print ("Mean of error click: ", round(mean, 2))
+
+median = np.median(df_Final["ClickTotal"])
+print ("Median : ", round(median, 2))
+
+Q1 = round(np.percentile(df_Final["ClickTotal"], 25))
+print ("Q1 Quartile : ", Q1)
+
+Q3 = round(np.percentile(df_Final["ClickTotal"], 75))
+print ("Q3 Quartile : ", Q3)
+
+variance = np.var(df_Final["ClickTotal"])
+print ("Variance : ", round(variance, 2))
+
+stdDeviation = np.std(df_Final["ClickTotal"])
+print ("Standard deviation : ", round(stdDeviation, 2))
+
 
 ## Statistic by color group 
 print("----- BLUE -------")
@@ -150,15 +167,6 @@ print(blue.groupby(['country_x'])['country_x'].count())
 
 print(blue.groupby(['device_x'])['device_x'].count())
 
-##colorblind=(blue['colorblind']=="yes").sum()
-##print("Number of colorblind : ",colorblind )
-
-mean = np.mean(blue["TimeTotal"])
-print ("Mean of time : ", round(mean, 2))
-
-mean = np.mean(blue["ClickTotal"])
-print ("Mean of error click: ", round(mean, 2))
-
 mean = np.mean(blue['easyNav_x'])
 print ("Mean of easy navigation : ", round(mean, 2))
 
@@ -168,6 +176,46 @@ print ("Mean of easy read ", round(mean, 2))
 mean = np.mean(blue["appealingColor_x"])
 print ("Mean of appealing color: ", round(mean, 2))
 
+print("-- Time--")
+mean = np.mean(blue["TimeTotal"])
+print ("Mean of time : ", round(mean, 2))
+
+median = np.median(blue["TimeTotal"])
+print ("%s%d%s" % ("Median : ", round(median, 2), " ms"))
+
+Q1 = round(np.percentile(blue["TimeTotal"], 25))
+print ("%s%d%s" % ("Q1 Quartile : ", Q1, " ms"))
+
+Q3 = round(np.percentile(blue["TimeTotal"], 75))
+print ("%s%d%s" % ("Q3 Quartile : ", Q3, " ms"))
+
+variance = np.var(blue["TimeTotal"])
+print ("%s%d%s" % ("Variance : ", round(variance, 2), " ms"))
+
+stdDeviation = np.std(blue["TimeTotal"])
+print ("%s%d%s" % ("Standard deviation : ", round(stdDeviation, 2), " ms"))
+
+print("-- Error Click --")
+mean = np.mean(blue["ClickTotal"])
+print ("Mean of error click: ", round(mean, 2))
+
+median = np.median(blue["ClickTotal"])
+print ("Median : ", round(median, 2))
+
+Q1 = round(np.percentile(blue["ClickTotal"], 25))
+print ("Q1 Quartile : ", Q1)
+
+Q3 = round(np.percentile(blue["ClickTotal"], 75))
+print ("Q3 Quartile : ", Q3)
+
+variance = np.var(blue["ClickTotal"])
+print ("Variance : ", round(variance, 2))
+
+stdDeviation = np.std(blue["ClickTotal"])
+print ("Standard deviation : ", round(stdDeviation, 2))
+
+
+### Yellow 
 print("----- YELLOW -------")
 yellow = df_Final[(df_Final.colorComb == 'yellow')]
 print("Number of answers :",len(yellow))
@@ -184,12 +232,6 @@ print(yellow.groupby(['country_x'])['country_x'].count())
 
 print(yellow.groupby(['device_x'])['device_x'].count())
 
-##colorblind=(yellow['colorblind']=="yes").sum()
-##print("Number of colorblind : ",colorblind )
-
-mean = np.mean(yellow["TimeTotal"])
-print ("Mean of time : ", round(mean, 2))
-
 mean = np.mean(yellow["ClickTotal"])
 print ("Mean of error click: ", round(mean, 2))
 
@@ -202,6 +244,46 @@ print ("Mean of easy read ", round(mean, 2))
 mean = np.mean(yellow["appealingColor_x"])
 print ("Mean of appealing color: ", round(mean, 2))
 
+print("-- Time--")
+mean = np.mean(yellow["TimeTotal"])
+print ("Mean of time : ", round(mean, 2))
+
+median = np.median(yellow["TimeTotal"])
+print ("%s%d%s" % ("Median : ", round(median, 2), " ms"))
+
+Q1 = round(np.percentile(yellow["TimeTotal"], 25))
+print ("%s%d%s" % ("Q1 Quartile : ", Q1, " ms"))
+
+Q3 = round(np.percentile(yellow["TimeTotal"], 75))
+print ("%s%d%s" % ("Q3 Quartile : ", Q3, " ms"))
+
+variance = np.var(yellow["TimeTotal"])
+print ("%s%d%s" % ("Variance : ", round(variance, 2), " ms"))
+
+stdDeviation = np.std(yellow["TimeTotal"])
+print ("%s%d%s" % ("Standard deviation : ", round(stdDeviation, 2), " ms"))
+
+print("-- Error Click --")
+mean = np.mean(yellow["ClickTotal"])
+print ("Mean of error click: ", round(mean, 2))
+
+median = np.median(yellow["ClickTotal"])
+print ("Median : ", round(median, 2))
+
+Q1 = round(np.percentile(yellow["ClickTotal"], 25))
+print ("Q1 Quartile : ", Q1)
+
+Q3 = round(np.percentile(yellow["ClickTotal"], 75))
+print ("Q3 Quartile : ", Q3)
+
+variance = np.var(yellow["ClickTotal"])
+print ("Variance : ", round(variance, 2))
+
+stdDeviation = np.std(yellow["ClickTotal"])
+print ("Standard deviation : ", round(stdDeviation, 2))
+
+
+
 ## plot
 
 fig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)
@@ -212,11 +294,12 @@ axs[1].hist(yellow["TimeTotal"], bins='auto', color='yellow')
 axs[0].set_title('Blue combinaison', size=12)
 axs[0].set_ylabel('Number of people', size=10)
 axs[0].set_xlabel('Time (ms)', size=10)
+axs[0].set_xlim(0, 60000)
 
 axs[1].set_title('Yellow combinaison', size=12)
 axs[1].set_ylabel('Number of people', size=10)
 axs[1].set_xlabel('Time (ms)', size=10)
-
+axs[1].set_xlim(0, 60000)
 
 plt.show()
 

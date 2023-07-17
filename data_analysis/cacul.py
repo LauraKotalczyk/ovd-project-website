@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy import stats as st
 
-dataset = pd.read_csv("Test_Data.csv", sep=",")
+dataset = pd.read_csv("data_analysis/Test_Data.csv", sep=",")
 
 ###### step 1: descriptive statistics  #####
 ##print (dataset.head())

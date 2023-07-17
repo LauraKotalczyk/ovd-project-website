@@ -306,13 +306,13 @@ plt.show()
 
 ## T Test
 print("----- T Test ------")
+print( "if p value <  0.05 -> significative difference")
 print("----- Time ------")
 X1 = blue["TimeTotal"]
 X2 = yellow["TimeTotal"]
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])
-print( "if p value <  0.05 -> significative difference")
 
 print("----- Eror click ------")
 X1 = blue["ClickTotal"]
@@ -320,8 +320,6 @@ X2 = yellow["ClickTotal"]
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])
-print( "if p value <  0.05 -> significative difference")
-
 
 print("----- Easy Navigation ------")
 X1 = blue['easyNav_x']
@@ -329,7 +327,6 @@ X2 = yellow['easyNav_x']
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])
-print( "if p value <  0.05 -> significative difference")
 
 print("----- Easy Read ------")
 X1 = blue['easyRead_x']
@@ -337,7 +334,6 @@ X2 = yellow['easyRead_x']
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])
-print( "if p value <  0.05 -> significative difference")
 
 print("----- Appealing Color ------")
 X1 = blue['appealingColor_x']
@@ -345,52 +341,48 @@ X2 = yellow['appealingColor_x']
 
 y = st.ttest_ind(X1,X2) 
 print(" P value :",y[1])
-print( "if p value <  0.05 -> significative difference")
 
 ## anova test
 print("----- ANOVA TEST ------")
+print( "if p value <  0.05 -> significative difference")
 
 print("--- Color Combinaison / Gender")
 model = ols('TimeTotal ~ C(colorComb) + C(gender_x) + C(colorComb):C(gender_x)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
+
 
 print("--- Color Combinaison / Age")
 model = ols('TimeTotal ~ C(colorComb) + C(age) + C(colorComb):C(age)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
 
 print("--- Color Combinaison / Country")
 model = ols('TimeTotal ~ C(colorComb) + C(country_x) + C(colorComb):C(country_x)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
 
 print("--- Color Combinaison / Device")
 model = ols('TimeTotal ~ C(colorComb) + C(device_x) + C(colorComb):C(device_x)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
 
 print("--- Color Combinaison / Easy Navigation")
 model = ols('TimeTotal ~ C(colorComb) + C(easyNav_x) + C(colorComb):C(easyNav_x)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
+
 
 print("--- Color Combinaison / Easy Read")
 model = ols('TimeTotal ~ C(colorComb) + C(easyRead_x) + C(colorComb):C(easyRead_x)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
 
 print("--- Color Combinaison / Appealing Color")
 model = ols('TimeTotal ~ C(colorComb) + C(appealingColor_x) + C(colorComb):C(appealingColor_x)', data=df_Final).fit()
 anova_table = sm.stats.anova_lm(model, typ=2)
-print("P-value: ", anova_table.iloc[2,3])
-print( "if p value <  0.05 -> significative difference")
+print(anova_table)
+
 
 
 

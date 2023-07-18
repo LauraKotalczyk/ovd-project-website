@@ -5,8 +5,8 @@ from scipy import stats as st
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 
-dataset300 = pd.read_csv("Scene_300.csv", sep=",")
-dataset301 = pd.read_csv("Scene_301.csv", sep=",")
+dataset300 = pd.read_csv("data_analysis/Scene_300.csv", sep=",")
+dataset301 = pd.read_csv("data_analysis/Scene_301.csv", sep=",")
 
 ## Merge dataset
 df_Final = pd.merge(dataset300, dataset301, on='User')

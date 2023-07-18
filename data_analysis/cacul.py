@@ -312,35 +312,35 @@ X1 = blue["TimeTotal"]
 X2 = yellow["TimeTotal"]
 
 y = st.ttest_ind(X1,X2) 
-print(" P value :",y[1])
+print(y)
 
 print("----- Eror click ------")
 X1 = blue["ClickTotal"]
 X2 = yellow["ClickTotal"]
 
 y = st.ttest_ind(X1,X2) 
-print(" P value :",y[1])
+print(y)
 
 print("----- Easy Navigation ------")
 X1 = blue['easyNav_x']
 X2 = yellow['easyNav_x']
 
 y = st.ttest_ind(X1,X2) 
-print(" P value :",y[1])
+print(y)
 
 print("----- Easy Read ------")
 X1 = blue['easyRead_x']
 X2 = yellow['easyRead_x']
 
 y = st.ttest_ind(X1,X2) 
-print(" P value :",y[1])
+print(y)
 
 print("----- Appealing Color ------")
 X1 = blue['appealingColor_x']
 X2 = yellow['appealingColor_x']
 
 y = st.ttest_ind(X1,X2) 
-print(" P value :",y[1])
+print(y)
 
 ## anova test
 print("----- ANOVA TEST ------")
